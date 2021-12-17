@@ -1,0 +1,26 @@
+= Leo-Iot
+EQ,EP,OJ, SK, FK
+1.0.0, 2020-11-2:
+ifndef::imagesdir[:imagesdir: images]
+
+== About
+
+Leo IOT is a project created to measure various real world data
+such as temperature and air moisture which are collected from sensor
+boxes placed in the rooms of the school building. The application
+will display the data on a dashboard and a 3D-Modell.
+
+== Preview
+
+- http://vm139.htl-leonding.ac.at/en/3d[3d Model]
+- http://vm139.htl-leonding.ac.at/en/dashboard[DashBoard]
+
+== Github
+
+* https://github.com/htl-leonding-project/leo-iot[GitHub]
+
+
+
+
+
+

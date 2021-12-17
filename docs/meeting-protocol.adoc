@@ -1,0 +1,382 @@
+= Meeting-Protocol
+
+== Legend
+|===
+| Ecker Quirin | EQ
+| Edlinger Philipp | EP
+| Klausner Florian  | KF
+| Knogler Simon  | KS
+| Kronreif Vinzent | KV
+| Rieser Felix | RF
+| Abazovic Edina | AE
+| Bogdan Sebastian | BS
+| Kerschbaum Philipp | KP
+| Rathberger Jakob | RJ
+| Stütz Thomas | ST
+| Köck Gerald | KG
+
+|===
+
+== 06.12.2020
+* EQ, EP, KF, KS, OJ, KV, RF
+* organizational matadded dashboard layout imagesters
+
+== 18.12.2020
+* EQ, EP, KF, KS, OJ, KV, RF
+* discussion with our predecessors about the project
+* new division of tasks
+
+== 27.12.2020
+* EQ, EP, KS, KV, RF
+* short briefing
+
+== 24.01.2021
+* EQ, EP, KS, KV, RF
+* briefing about the current situation
+* discussion about occurring go problems
+* restructuring of the repo
+* brainstorming about a more efficient ways of operating
+** several work sessions a month
+
+== 04.02.2021
+* EQ, EP, KS, KF, ST
+* talked about the project management and structure
+* TODO:
+** getting rid off the feature branches
+** creating project handbook
+** linking of all sources
+
+==== 14.02.2021
+* EP, KV, RF
+* update on current situation
+* upcoming simulator problems
+** dicussion about solving the problem
+* talking about deadlines
+
+== 19.02.2021
+* EQ,EP, ST
+* Write instructions for the backend in the ReadME
+* the professor is looking for an alternative solution for JDBC
+* create reactive branching
+
+
+== 21.02.2021
+* EQ, EP, KV
+* status update
+* assigned new tasks
+* should create extra branch for the new simulator libary
+
+
+== 22.02.2021
+
+* EQ,EP,ST, KG
+* Notes:
+** programm is available
+** we need to configure the sensorbox
+** the software is written in c++
+** in VS we use Express IDF
+** Express uses a components
+** procedure:
+*** picking the device
+*** build the code (Build Flash Monitor)
+*** an accespoints starts
+** a http-server is running on the sensorbox
+** assigning of a topic:
+*** configuration happens in the Main
+** How does the server new which room is currently used:
+*** ThingName
+** Our Goal:
+*** configuration of the sensorbox with access to the accesspoint of the school
+
+== 07.03.2021
+* EQ, EP, KV, RF
+* talked about the current state and tasks
+* tried to fix a connecting to mediator error
+
+== 08.03.2021
+* EQ, EP. GK
+* configuration of the sensorbox
+
+== 19.03.2021
+* EQ, EP
+* current status update
+* talked about management of the project
+* new Milestones / Priority
+** implementation of sensorboxes into room k03
+** a new datamodel / whole Backend
+** Frontend
+* looking for a task for the pc in the lab
+
+== 21.03.2021
+* EQ, EP, KF,KV, RF
+* status update
+* assigned new tasks
+
+== 25.03.2021
+* EQ, EP
+* get the touchscreen in lab running
+* tried to solve a problem with the vm139
+** weren't able to establish a connection internally
+** because the local address and those in the network are the same
+
+== 04.04.2021
+* EQ, EP, KF, RF
+* current status update
+* assigned new task
+
+
+== 07.04.2021
+* EQ, EP
+* ask GK
+** get new powerstations
+** need to ask for more specifications
+* lay more focus on Frontend
+** Dashboard should get basic features
+** 3D model need to be
+*** new animations
+*** update layout of the building
+
+== 09.04.2021
+* EQ, EP
+* new tasks assigned
+** dummy generator for 3d Model
+** create a reworked Dashboard
+* created a question list
+* see notes 09042021
+
+== 14.04.2021
+* EQ, EP
+* went trough the question list
+* talked about on going assigned tasks
+* a new datamodel was worked out
+* Todos:
+** new Mqtt Mapper
+** implement new datamodell
+** update the software on all sensorboxes
+** need to ask sysadmin about upd
+** create a new Dashboard (rework the old one)
+
+== 18.04.2021
+* EQ, EP, KF, RF
+* status update
+* assigned new tasks
+** new dashboard
+** seperated systemspec
+** implement reworked sim prototype and api
+
+== 25.04.2021
+* EQ, EP, KF, RF
+* status updated
+
+== 02.05.2021
+* EQ, EP, RF
+* status updated
+
+== 09.05.2021
+* EQ, EP, KF, RF
+* status updated
+
+== 16.05.2021
+* EQ, EP, KF, RF
+* talked about current tasks
+* assigned new tasks
+
+== 21.05.2021
+* EQ, EP, ST
+* talked about the current status of the project
+* protocol needs to be updated
+* should add issues no. to our commits
+
+== 23.05.2021
+* EQ, EP ,RF
+* current status updated
+* talked sensor and simulator docs
+* talked about the sprint
+
+== 07.06.2021
+* EQ, VK ,RF
+* current status
+* talked about frontend tasks
+* current tasks from 4AHIF group (value-sim done, tests and endpoint documentation in progress)
+* EQ: currently working that data is automatically persisting
+
+
+== 15.06.2021
+* ST, EQ, RF,  KV
+* if a new sensor connects, he well be created atomatically ... -> searching for the new one under sensor and actor...no results --> Create new Sensor
+* update gh pages and generalize it, so a new user have a quick overview
+* sysmem architecture from the sys spec should also be on the gh pages
+* The German Systemspec should be marked with "German"
+* new deployment diagram
+* "House with Students and sensorboxes whiich connecting to the mqtt
+* mqtt picture also on gh pages + quick explanation
+
+== 20.06.2021
+* EQ, RF
+* update sprint 3
+* end presentation (backend/frontend/value simulator)
+
+== 25.06.2021
+* EQ, EP, ST
+* project presentation
+
+== 19.09.2021
+* EQ, EP, RF
+* status update
+* discussion about potential new members
+* talked about if we should implement the slides to our repo
+* changed the day of the week of the weekly meetings
+
+== 27.9.2021
+* EQ, EP, KV
+* talked about youtrack
+** need to update classnames
+** convert github issues to youtrack
+* new tasks:
+** preparation of the presentation
+** addition of asciidocs slides
+** update of the endpoints
+
+== 30.9.2021
+* EQ , EP, KS
+* decided to focus on the dashboard
+* talked about the 3D-Model and the whole old frontend
+* quickstart of the new web
+
+== 04.10.2021
+* EQ, EP, KV, RF, BS, KP, RJ,
+* first meeting with of our new project members
+* introduction of the project
+* setup youtrack and github repo access
+* potential AI of the project
+* need to make an appointment
+
+== 11.10.2021
+* EQ, EP, BS, KP, RJ,ST
+* canceled the upcoming meeting with ST
+* talked about the tasks for the newcomer
+** are taking over the 3D-Model
+** introduction to the whole backend
+*** have a meeting on 15.10
+
+== 15.10.2021
+* EQ, EP, AE, BS, KP, RJ
+* meeting with the members of the 4AHIF
+* introduction to Angular
+* decided to create a new 3D-Model
+** getting rif of the localizations
+
+== 22.10.2021
+* EQ, ED, KF, KS
+
+* current tasks of  the team members
+
+|===
+|Ecker | backend redesign
+|Edlinger | swagger-api
+|Klausner | presentation about the modules of the frontend
+|Knogler | presentation about the modules of the frontend
+|Kronreif| value-simulator
+|Rieser | value-simulator
+|Abazovic | learning phase about angular and the 3D-Model
+|Bogdan | learning phase about angular and the 3D-Model
+|Kerschbaum | learning phase about angular and the 3D-Model
+|Rathberger | learning phase about angular and the 3D-Model
+|===
+
+== 15.11.2021
+
+- AE, BS, KS, RJ, EQ
+
+* Sprint Review
+** Mocking and testing is now part of the sprint 3
+** Connection over websockets can be established to the vm90
+** A Quick Demo for the new 3d Model with a cube as been implemented
+** An unfinished presentation of the angular modules is available
+
+* New Tasks
+** Values Simulator Rooms should be in the database
+** Value Simulator Documentation should be reworked
+** Demo of the School 3d Model should be available
+** New Docker Image with native quarkus executable and multi stage builds
+** Complete presentation of the angular modules
+
+== 19.11.2021
+
+- ST, EQ
+
+* Fehlende Ergebnisse von dem Dashboard Team
+* Ussage of swimmlanes in you track is needed
+* Besprechung mit dem Dashboard Team is needed
+
+== 22.11.2021
+
+- RJ, KP, KS, KF, EQ
+
+* KP and KS have now the assignment to create the basic layout of the dashboard
+* RJ and KP have advanced in the 3d Model demo. still have the assignment to complete the 3d Model Demo
+* EQ has still the assignment to create the advanced docker image
+* all those assignments are for the rest of the sprint
+* KP and KS also need to complete the presentation
+* The 3d Model team is now smaller with only RJ and KP
+* RJ is switching to the backend team next week
+* maybe more changes to the team in the next week
+* Other team members did not attend the meeting
+** Tasks will stay the same
+
+== 29.11.2021
+
+- RJ, KP, KF, EQ
+
+* The 3d Model team is finished with the 3d model demo.
+** still a bit black right now with not much light
+** assignment for next sprint to make light
+** assignment for next sprint to be able to hide floors
+* Nothing new with the value simulator team
+** assignment for next sprint to get a deployment vm
+** assignment for next sprint to fix bugs
+** assignment for next sprint to update databse integrations
+* Nothing new from the Dashboard team. No one was at the meeting
+
+== 6.12.2021
+
+- RJ, KP, RF, EQ
+
+* The 3d Model team added light to the demo
+** task is to make hide option for floors
+** new task is to create a presentation
+* Value Simulator team is working on the deployment for new vm
+** new vm is acquired
+* QE is finished creating the docker image for the backend
+** new task create a presentation for docker containerization
+* No news from the Dashboard team
+** No one was at the meeting
+
+== 13.12.2021
+
+- RF, KV, RJ, KP, EQ
+
+* RJ, KP are working on the 3d Model demo
+** They finished the light and the feature to disable and enable different floor
+** Now working on selecting different rooms and displaying the name of the room with the floor
+* RF, KV are working on deploying to the vm
+** deploying works now
+*+ no new plans on what they will do in the future
+* EQ worked on the Backend Docker images
+** still waiting to present the docker iamge presentation
+** now starting to clean up the code in the backend
+
+== 17.12.2021
+
+EQ, ST
+
+* Schnell erreichbar:
+** Systemarchitektur (Grob und detailiert)
+** Klassendiagramm
+* Landingpage
+* Github Repos in neue Organisation
+* Räume für value simulator in eine Datenbank speichern
+
+----
+sudo apt update && sudo apt dist-upgrade -y && apt autoremove
+----
