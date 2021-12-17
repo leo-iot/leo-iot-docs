@@ -1,4 +1,4 @@
-name: Documentation
+name: Docs
 
 on:
   push:
@@ -7,19 +7,24 @@ on:
 
 jobs:
   build:
-    name: Build ⚙
+    name: Build & Publish 🚀
     runs-on: ubuntu-latest
+    env:
+      INPUTPATH: docs
+      OUTPUTPATH: dist
+      SLIDES: true
+      BRANCH: gh-pages
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        uses: quirinecker/asciidoctor-convert-action@1.0
+        uses: quirinecker/asciidoctor-convert-action@main
         with:
-          slides: true
-          inputPath: docs
-          outputPath: dist
+          slides: ${{ env.SLIDES }}
+          inputPath: ${{ env.INPUTPATH }}
+          outputPath: ${{ env.OUTPUTPATH }}
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ github.TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: out
+          BRANCH: ${{ env.BRANCH }}
+          FOLDER: ${{ env.OUTPUTPATH }}
