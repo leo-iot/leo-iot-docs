@@ -9,7 +9,7 @@
 
 === Database Access
 
-We use for the development configuration the zero conf dev-service of quarkus. For more information see link:zero-conf-database.adoc[here]. You dont have to start up a database.
+We use for the development configuration the zero conf dev-service of quarkus. For more information see link:zero-conf-database[here]. You dont have to start up a database.
 
 |===
 |Key | Value
