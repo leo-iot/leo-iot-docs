@@ -57,34 +57,34 @@ Merging back to the `master`/`main` branch requires a Pull Request. Merging back
 
 image::core_development.png[]
 
-=== 1. Checkout Branch module-integration
+=== Checkout Branch module-integration
 
 [source, shell script]
 ----
 git checkout module-integration
 ----
 
-=== 2. Pull changes from modules
+=== Pull changes from modules
 
 [source, shell script]
 ----
 git submodule foreach git pull
 ----
 
-=== 3. Push changes
+=== Push changes
 
 [source, shell script]
 ----
 git push origin module-integration
 ----
 
-=== 4. Pull Request to Develop
+=== Pull Request to Develop
 
 Create a Pull request to merge into the `develop` branch on GitHub. This Pull Request should be reviewed by more than one person. Best scenario: all developers.
 
 NOTE: Once Successfully merged the CI Tests should be executed in the gh action pipeline
 
-=== 5. Pull Request to Main
+=== Pull Request to Main
 
 Create a Pull request to merge into the `main` branch on GitHub. This Pull Request should be reviewed by more than one person. Best scenario: all developers.
 
