@@ -1,13 +1,31 @@
 = Git Policy
+ifndef::imagesdir[:imagesdir: images]
+:icons: font
 
-== Switch to Develop
+== Module Development
+
+image::module_development.png[]
+
+* PR: Pull Request
+
+=== Feature Pull Request
+
+Must include
+
+* Implementation of the feature
+* Tests for the feature
+* Documentation about the feature
+
+as seen in the picture above.
+
+=== Switch to Develop
 
 [source]
 ----
 git checkout develop
 ----
 
-== Create a new Feature
+=== Create a new Feature
 Replace `<name>` with the name of you feature.
 
 [source]
@@ -18,17 +36,56 @@ git checkout feature/<name>
 
 Now you can develop your feature on your own branch.
 
-== Update you Feature Branch
+=== Update you Feature Branch
+
+Sometimes you want to get the new changes of the develop branch into you branch.
 
 [source]
 ----
 git merge develop
 ----
 
-== Merge Feature Back to the Develop Branch
+=== Merge Feature Back to the Develop Branch
 
 Merging back to the develop branch should be done through a pull request. Create a pull request on GitHub and wait for someone to review it.
 
-== Merge Back to the Master/Main Branch
+=== Merge Back to the Master/Main Branch
 
-Merging back to the `master`/`main` branch requires a Pull Request. Mergin back to the master Branch should only be required at the end of a sprint.
+Merging back to the `master`/`main` branch requires a Pull Request. Merging back to the master Branch should only be required at the end of a sprint.
+
+== Core Development
+
+image::core_development.png[]
+
+=== 1. Checkout Branch module-integration
+
+[source, shell script]
+----
+git checkout module-integration
+----
+
+=== 2. Pull changes from modules
+
+[source, shell script]
+----
+git submodule foreach git pull
+----
+
+=== 3. Push changes
+
+[source, shell script]
+----
+git push origin module-integration
+----
+
+=== 4. Pull Request to Develop
+
+Create a Pull request to merge into the `develop` branch on GitHub. This Pull Request should be reviewed by more than one person. Best scenario: all developers.
+
+NOTE: Once Successfully merged the CI Tests should be executed in the gh action pipeline
+
+=== 5. Pull Request to Main
+
+Create a Pull request to merge into the `main` branch on GitHub. This Pull Request should be reviewed by more than one person. Best scenario: all developers.
+
+NOTE: Once Successfully merged the CI Tests and Deployment should be executed in the gh action pipeline
