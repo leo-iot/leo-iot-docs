@@ -1,0 +1,48 @@
+= Getting Started
+
+== Development
+
+[source, shell script]
+----
+./mvnw clean compile quarkus:dev
+----
+
+=== Database Access
+
+We use for the development configuration the zero conf dev-service of quarkus. For more information see link:zero-conf-database.adoc[here]. You dont have to start up a database.
+
+|===
+|Key | Value
+
+|Host
+|localhost
+
+|Port
+|5432
+
+|username
+|quarkus
+
+|password
+|quarkus
+
+|database
+|default
+|===
+
+== Production
+
+=== Build Image
+
+[source, shell script]
+----
+docker build . -t <your-image-tag>
+----
+
+=== Run Image
+
+[source, shell script]
+----
+docker run -p 8080:8080 <your-image-tag>
+----
+

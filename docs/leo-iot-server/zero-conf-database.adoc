@@ -1,0 +1,34 @@
+= Zero Config Database
+
+This is a database which is starting up automatically in a container when the quarkus dev profile ist started up. You can read more about the behaviour and configuration of the dev-services link:https://quarkus.io/guides/datasource#dev-services[here] and link:https://quarkus.io/guides/dev-services[here].
+
+== Database Access
+
+|===
+|Key | Value
+
+|Host
+|localhost
+
+|Port
+|5432
+
+|username
+|quarkus
+
+|password
+|quarkus
+
+|database
+|default
+|===
+
+== Configuration in the application.properties
+
+[source, properties]
+----
+quarkus.datasource.devservices.port=5432
+----
+
+This configuration is for fixing the port to 5432 otherwise it is randomly set. This way it is possible to connect from the outside.
+
