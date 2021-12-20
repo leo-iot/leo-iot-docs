@@ -13,7 +13,7 @@ image::module_development.png[]
 Must include
 
 * Implementation of the feature
-* Tests for the feature
+* Tests for the feature (Unittests and Integrationstests if necessary)
 * Documentation about the feature
 
 as seen in the picture above.
