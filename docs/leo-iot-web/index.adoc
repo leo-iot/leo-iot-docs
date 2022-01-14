@@ -1,0 +1,5 @@
+= Leo IOT Web
+
+== Getting Started
+
+- link:getting-started.adoc[getting started]

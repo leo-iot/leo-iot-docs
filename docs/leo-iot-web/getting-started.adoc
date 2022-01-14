@@ -1,0 +1,23 @@
+= Getting Started
+
+== Development
+
+[source, shell script]
+----
+npm start
+----
+
+== Production
+
+=== Build
+[source, shell script]
+----
+docker build . -t leo-iot-web
+----
+
+=== Run
+
+[source, shell script]
+----
+docker run leo-iot-web
+----
