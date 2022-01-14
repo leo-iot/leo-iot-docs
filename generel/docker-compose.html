@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Documentation</title>
+<title>Docker Compose</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,140 +437,77 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-pre.rouge .hll {
-  background-color: #ffc;
-}
-pre.rouge .hll * {
-  background-color: initial;
-}
-</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Documentation</h1>
+<h1>Docker Compose</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_system_architecture">1. System Architecture</a></li>
-<li><a href="#_system_specification">2. System Specification</a></li>
-<li><a href="#_code_documentation">3. Code Documentation</a>
+<li><a href="#_default_docker_compose">1. Default Docker Compose</a>
 <ul class="sectlevel2">
-<li><a href="#_generell">3.1. Generell</a></li>
-<li><a href="#_frontend">3.2. Frontend</a></li>
-<li><a href="#_backend">3.3. Backend</a></li>
-<li><a href="#_simulator">3.4. Simulator</a></li>
-<li><a href="#_sensor">3.5. Sensor</a></li>
+<li><a href="#_location">1.1. Location</a></li>
+<li><a href="#_purpose">1.2. Purpose</a></li>
 </ul>
 </li>
-<li><a href="#_meeting_protocol">4. Meeting Protocol</a></li>
+<li><a href="#_deploy_docker_compose">2. Deploy Docker Compose</a>
+<ul class="sectlevel2">
+<li><a href="#_location_2">2.1. Location</a></li>
+<li><a href="#_purpose_2">2.2. Purpose</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_system_architecture"><a class="anchor" href="#_system_architecture"></a>1. System Architecture</h2>
+<h2 id="_default_docker_compose"><a class="anchor" href="#_default_docker_compose"></a>1. Default Docker Compose</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_location"><a class="anchor" href="#_location"></a>1.1. Location</h3>
 <div class="paragraph">
-<p><span class="image"><img src="images/system_architecture_new.png" alt="system architecture new" width="800px"></span></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_system_specification"><a class="anchor" href="#_system_specification"></a>2. System Specification</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><a href="System-Specification">System Specification Documentation</a></p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_code_documentation"><a class="anchor" href="#_code_documentation"></a>3. Code Documentation</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_generell"><a class="anchor" href="#_generell"></a>3.1. Generell</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="getting-started">getting started</a></p>
-</li>
-<li>
-<p><a href="git">git</a></p>
-</li>
-<li>
-<p><a href="github-secrets">GitHub Secrets</a></p>
-</li>
-<li>
-<p><a href="git-secret">git secret</a></p>
-</li>
-<li>
-<p><a href="docker-compose">Docker Compose Files</a></p>
-</li>
-</ul>
+<p><code>docker-compose.yml</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_frontend"><a class="anchor" href="#_frontend"></a>3.2. Frontend</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_backend"><a class="anchor" href="#_backend"></a>3.3. Backend</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="backend-documentation">Backend Documentation</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_simulator"><a class="anchor" href="#_simulator"></a>3.4. Simulator</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="System-Specification-Valuesimulator">Simulator System Specification</a></p>
-</li>
-<li>
-<p><a href="ValueSimulator-Documentation">Simulator Documentation</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_sensor"><a class="anchor" href="#_sensor"></a>3.5. Sensor</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="Sensor-Documentation">Sensor Documentation</a></p>
-</li>
-<li>
-<p><a href="sensor-thresholds">Neopixel Ring Thresholds</a></p>
-</li>
-</ul>
+<h3 id="_purpose"><a class="anchor" href="#_purpose"></a>1.2. Purpose</h3>
+<div class="paragraph">
+<p>With this docker compose you can build the whole project and start it.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_meeting_protocol"><a class="anchor" href="#_meeting_protocol"></a>4. Meeting Protocol</h2>
+<h2 id="_deploy_docker_compose"><a class="anchor" href="#_deploy_docker_compose"></a>2. Deploy Docker Compose</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_location_2"><a class="anchor" href="#_location_2"></a>2.1. Location</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="meeting-protocol">meeting protocols</a></p>
+<p><code>docker-compose.deploy.yml</code></p>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_purpose_2"><a class="anchor" href="#_purpose_2"></a>2.2. Purpose</h3>
+<div class="paragraph">
+<p>The deploy docker compose is a special docker compose which doesn&#8217;t include the build paths to the dockerfiles for each component. We only use it for GitHub action deployment</p>
+</div>
+<div class="paragraph">
+<p>With this docker-compose the application will start without the whole project. With the normal docker-compose this is not the case because of the build paths.</p>
+</div>
+<div class="paragraph">
+<p>See more <a href="https://github.com/docker/compose/issues/2945">here</a></p>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-14 22:08:58 UTC
+Last updated 2022-01-14 23:06:59 UTC
 </div>
 </div>
 </body>

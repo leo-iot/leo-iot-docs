@@ -652,14 +652,6 @@ pre.rouge {
   background-color: #f8f8f8;
 }
 </style>
-<style>
-pre.rouge .hll {
-  background-color: #ffc;
-}
-pre.rouge .hll * {
-  background-color: initial;
-}
-</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
@@ -670,9 +662,8 @@ pre.rouge .hll * {
 <li><a href="#_clone_repository">1. Clone Repository</a></li>
 <li><a href="#_getting_started_development">2. Getting Started Development</a>
 <ul class="sectlevel2">
-<li><a href="#_start_timescale_db">2.1. Start Timescale DB</a></li>
-<li><a href="#_start_quarkus_in_development_mode">2.2. Start Quarkus in development Mode</a></li>
-<li><a href="#_start_angular_in_development_mode">2.3. Start Angular in development Mode</a></li>
+<li><a href="#_server">2.1. Server</a></li>
+<li><a href="#_start_angular_in_development_mode">2.2. Start Angular in development Mode</a></li>
 </ul>
 </li>
 <li><a href="#_getting_started_production">3. Getting Started Production</a>
@@ -699,51 +690,15 @@ pre.rouge .hll * {
 <h2 id="_getting_started_development"><a class="anchor" href="#_getting_started_development"></a>2. Getting Started Development</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_start_timescale_db"><a class="anchor" href="#_start_timescale_db"></a>2.1. Start Timescale DB</h3>
+<h3 id="_server"><a class="anchor" href="#_server"></a>2.1. Server</h3>
 <div class="paragraph">
-<p>The production databse and the development database are the same. There is a extra docker-compose file for starting only the database. This container can be executed by running the following commands.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="shell"><span class="nb">cd </span>database
-docker-compose up <span class="nt">-d</span></code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
--d option is for daemon. If you don&#8217;t want to start it in the background, remove this option.
-</td>
-</tr>
-</table>
+<p>Please refer to the <a href="../leo-iot-server/getting-started">getting started</a> page of the server module.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_start_quarkus_in_development_mode"><a class="anchor" href="#_start_quarkus_in_development_mode"></a>2.2. Start Quarkus in development Mode</h3>
+<h3 id="_start_angular_in_development_mode"><a class="anchor" href="#_start_angular_in_development_mode"></a>2.2. Start Angular in development Mode</h3>
 <div class="paragraph">
-<p>For starting quarkus simply start quarkus in the development. This works with the following command</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="shell"><span class="nb">cd </span>backend
-./mvnw clean compile quarkus:dev</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_start_angular_in_development_mode"><a class="anchor" href="#_start_angular_in_development_mode"></a>2.3. Start Angular in development Mode</h3>
-<div class="paragraph">
-<p>The frontend can be started in development mode with the start npm script.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="shell"><span class="nb">cd </span>frontend
-npm start</code></pre>
-</div>
+<p>Please refer to the <a href="../leo-iot-web/getting-started">getting started</a> page of the server module.</p>
 </div>
 </div>
 </div>
@@ -790,7 +745,7 @@ npm start</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-14 22:08:58 UTC
+Last updated 2022-01-14 23:06:59 UTC
 </div>
 </div>
 </body>

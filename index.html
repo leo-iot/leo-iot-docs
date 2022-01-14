@@ -5,9 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<meta name="author" content="EQ,EP,OJ, SK, FK">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Leo-Iot</title>
+<title>Leo IOT Documentation</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -449,56 +448,122 @@ pre.rouge .hll * {
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Leo-Iot</h1>
-<div class="details">
-<span id="author" class="author">EQ,EP,OJ, SK, FK</span><br>
-<span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2020-11-2</span>
-<br><span id="revremark"></span>
-</div>
+<h1>Leo IOT Documentation</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_about">1. About</a></li>
-<li><a href="#_preview">2. Preview</a></li>
-<li><a href="#_github">3. Github</a></li>
+<li><a href="#_system_architecture">1. System Architecture</a></li>
+<li><a href="#_meeting_protocol">2. Meeting Protocol</a></li>
+<li><a href="#_documentation">3. Documentation</a>
+<ul class="sectlevel2">
+<li><a href="#_generell">3.1. Generell</a></li>
+<li><a href="#_modules">3.2. Modules</a></li>
+<li><a href="#_related_projects">3.3. Related Projects</a></li>
+</ul>
+</li>
+<li><a href="#_project_documents">4. Project Documents</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_about"><a class="anchor" href="#_about"></a>1. About</h2>
+<h2 id="_system_architecture"><a class="anchor" href="#_system_architecture"></a>1. System Architecture</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Leo IOT is a project created to measure various real world data
-such as temperature and air moisture which are collected from sensor
-boxes placed in the rooms of the school building. The application
-will display the data on a dashboard and a 3D-Modell.</p>
+<p><span class="image"><img src="images/system_architecture_new.png" alt="system architecture new" width="800px"></span></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_preview"><a class="anchor" href="#_preview"></a>2. Preview</h2>
+<h2 id="_meeting_protocol"><a class="anchor" href="#_meeting_protocol"></a>2. Meeting Protocol</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Protocol where every meeting should be documented.</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="http://vm139.htl-leonding.ac.at/en/3d">3d Model</a></p>
-</li>
-<li>
-<p><a href="http://vm139.htl-leonding.ac.at/en/dashboard">DashBoard</a></p>
+<p><a href="meeting-protocol/index">meeting protocols</a></p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_github"><a class="anchor" href="#_github"></a>3. Github</h2>
+<h2 id="_documentation"><a class="anchor" href="#_documentation"></a>3. Documentation</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_generell"><a class="anchor" href="#_generell"></a>3.1. Generell</h3>
+<div class="paragraph">
+<p>Documentation of general things which are not related to one specific module.</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://github.com/htl-leonding-project/leo-iot">GitHub</a></p>
+<p><a href="generel/getting-started">getting started</a></p>
+</li>
+<li>
+<p><a href="generel/git">git</a></p>
+</li>
+<li>
+<p><a href="generel/github-secrets">GitHub Secrets</a></p>
+</li>
+<li>
+<p><a href="generel/git-secret">git secret</a></p>
+</li>
+<li>
+<p><a href="generel/docker-compose">Docker Compose Files</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_modules"><a class="anchor" href="#_modules"></a>3.2. Modules</h3>
+<div class="paragraph">
+<p>For information of specific modules click one of the modules below. Modules are internal and required by the leo-iot application.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="leo-iot-web/index">Web</a></p>
+</li>
+<li>
+<p><a href="leo-iot-web/index">Server</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_related_projects"><a class="anchor" href="#_related_projects"></a>3.3. Related Projects</h3>
+<div class="paragraph">
+<p>For information about related project click one of the related projects below. Those are not essential for the leo-iot application but are part of the leo-iot ecosystem.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="value-simulator/index">Value Simulator</a></p>
+</li>
+<li>
+<p><a href="leo-box/index">Leo Box</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_project_documents"><a class="anchor" href="#_project_documents"></a>4. Project Documents</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Official Project documents.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="project-documents/System-Specification">System Specification</a></p>
+</li>
+<li>
+<p><a href="project-documents/Proposal.adoc">Proposal</a></p>
 </li>
 </ul>
 </div>
@@ -507,8 +572,7 @@ will display the data on a dashboard and a 3D-Modell.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0.0<br>
-Last updated 2022-01-14 22:08:58 UTC
+Last updated 2022-01-14 23:06:59 UTC
 </div>
 </div>
 </body>

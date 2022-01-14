@@ -5,9 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<meta name="author" content="EQ,EP,OJ, SK, FK, VK, FR">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Backend Documentation</title>
+<title>Sensor Thresholds Neopixel Ring</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,75 +437,58 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-pre.rouge .hll {
-  background-color: #ffc;
-}
-pre.rouge .hll * {
-  background-color: initial;
-}
-</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Backend Documentation</h1>
-<div class="details">
-<span id="author" class="author">EQ,EP,OJ, SK, FK, VK, FR</span><br>
-<span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2020-11-2</span>
-<br><span id="revremark"></span>
-</div>
+<h1>Sensor Thresholds Neopixel Ring</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_erd">1. ERD</a></li>
-<li><a href="#_purpose">2. Purpose</a></li>
-<li><a href="#_specification">3. Specification</a></li>
-<li><a href="#_components">4. Components</a></li>
+<li><a href="#_green_light">1. Green Light</a></li>
+<li><a href="#_yellow_light">2. Yellow Light</a></li>
+<li><a href="#_red_light">3. RED Light</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_erd"><a class="anchor" href="#_erd"></a>1. ERD</h2>
-<div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="images/erd.png" alt="erd" width="1195" height="430">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>2. Purpose</h2>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The aim of the backend is to persist the collected data/values of the mqtt-broker into a database and to be able to provied those with websockets.</p>
+<p>The color of the neopixel ring will vary depending on the CO2 values. See the thresholds below.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_specification"><a class="anchor" href="#_specification"></a>3. Specification</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><span class="image"><img src="images/backend_system_architecture.png" alt="backend system architecture"></span></p>
-</div>
-<div class="paragraph">
-<p>A MessageReciever in Quarkus gets the provided measurements via a subscription on the MQTT-Broker.The collected measurements are intern handled by a Repository which persist the values into a Timescale Database and
-offer them for further components through Websockets/Endpoints.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_components"><a class="anchor" href="#_components"></a>4. Components</h2>
+<h2 id="_green_light"><a class="anchor" href="#_green_light"></a>1. Green Light</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Quarkus</p>
+<p>The CO2 value must be in the range of: <code>co2 &lt; 500 ppm</code></p>
 </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_yellow_light"><a class="anchor" href="#_yellow_light"></a>2. Yellow Light</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
 <li>
-<p>Timescale DB</p>
+<p>The CO2 value must be in the range of: <code>500 ppm &lt; co2 &lt; 1500 ppm</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_red_light"><a class="anchor" href="#_red_light"></a>3. RED Light</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>The CO2 value must be in the range of: <code>co2 &gt; 1500 ppm</code></p>
 </li>
 </ul>
 </div>
@@ -515,8 +497,7 @@ offer them for further components through Websockets/Endpoints.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.0.0<br>
-Last updated 2022-01-14 22:08:58 UTC
+Last updated 2022-01-14 23:06:59 UTC
 </div>
 </div>
 </body>

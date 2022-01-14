@@ -5,8 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="author" content="RF,VK,R">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Git Policy</title>
+<title>Value Simulator</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,253 +438,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-pre.rouge table td { padding: 5px; }
-pre.rouge table pre { margin: 0; }
-pre.rouge .cm {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .cp {
-  color: #999999;
-  font-weight: bold;
-}
-pre.rouge .c1 {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .cs {
-  color: #999999;
-  font-weight: bold;
-  font-style: italic;
-}
-pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cpf {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .err {
-  color: #a61717;
-  background-color: #e3d2d2;
-}
-pre.rouge .gd {
-  color: #000000;
-  background-color: #ffdddd;
-}
-pre.rouge .ge {
-  color: #000000;
-  font-style: italic;
-}
-pre.rouge .gr {
-  color: #aa0000;
-}
-pre.rouge .gh {
-  color: #999999;
-}
-pre.rouge .gi {
-  color: #000000;
-  background-color: #ddffdd;
-}
-pre.rouge .go {
-  color: #888888;
-}
-pre.rouge .gp {
-  color: #555555;
-}
-pre.rouge .gs {
-  font-weight: bold;
-}
-pre.rouge .gu {
-  color: #aaaaaa;
-}
-pre.rouge .gt {
-  color: #aa0000;
-}
-pre.rouge .kc {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kd {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kn {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kp {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kr {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kt {
-  color: #445588;
-  font-weight: bold;
-}
-pre.rouge .k, pre.rouge .kv {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .mf {
-  color: #009999;
-}
-pre.rouge .mh {
-  color: #009999;
-}
-pre.rouge .il {
-  color: #009999;
-}
-pre.rouge .mi {
-  color: #009999;
-}
-pre.rouge .mo {
-  color: #009999;
-}
-pre.rouge .m, pre.rouge .mb, pre.rouge .mx {
-  color: #009999;
-}
-pre.rouge .sa {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .sb {
-  color: #d14;
-}
-pre.rouge .sc {
-  color: #d14;
-}
-pre.rouge .sd {
-  color: #d14;
-}
-pre.rouge .s2 {
-  color: #d14;
-}
-pre.rouge .se {
-  color: #d14;
-}
-pre.rouge .sh {
-  color: #d14;
-}
-pre.rouge .si {
-  color: #d14;
-}
-pre.rouge .sx {
-  color: #d14;
-}
-pre.rouge .sr {
-  color: #009926;
-}
-pre.rouge .s1 {
-  color: #d14;
-}
-pre.rouge .ss {
-  color: #990073;
-}
-pre.rouge .s, pre.rouge .dl {
-  color: #d14;
-}
-pre.rouge .na {
-  color: #008080;
-}
-pre.rouge .bp {
-  color: #999999;
-}
-pre.rouge .nb {
-  color: #0086B3;
-}
-pre.rouge .nc {
-  color: #445588;
-  font-weight: bold;
-}
-pre.rouge .no {
-  color: #008080;
-}
-pre.rouge .nd {
-  color: #3c5d5d;
-  font-weight: bold;
-}
-pre.rouge .ni {
-  color: #800080;
-}
-pre.rouge .ne {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nf, pre.rouge .fm {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nl {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nn {
-  color: #555555;
-}
-pre.rouge .nt {
-  color: #000080;
-}
-pre.rouge .vc {
-  color: #008080;
-}
-pre.rouge .vg {
-  color: #008080;
-}
-pre.rouge .vi {
-  color: #008080;
-}
-pre.rouge .nv, pre.rouge .vm {
-  color: #008080;
-}
-pre.rouge .ow {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .o {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .w {
-  color: #bbbbbb;
-}
-pre.rouge {
-  background-color: #f8f8f8;
-}
-</style>
-<style>
-pre.rouge .hll {
-  background-color: #ffc;
-}
-pre.rouge .hll * {
-  background-color: initial;
-}
-</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Git Policy</h1>
+<h1>Value Simulator</h1>
+<div class="details">
+<span id="author" class="author">RF,VK,R</span><br>
+<span id="revnumber">version 1.0.0,</span>
+<span id="revdate">2021-18-5</span>
+<br><span id="revremark"></span>
+</div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_module_development">1. Module Development</a>
+<li><a href="#_pflichtenheft">1. Pflichtenheft</a>
 <ul class="sectlevel2">
-<li><a href="#_feature_pull_request">1.1. Feature Pull Request</a></li>
-<li><a href="#_switch_to_develop">1.2. Switch to Develop</a></li>
-<li><a href="#_create_a_new_feature">1.3. Create a new Feature</a></li>
-<li><a href="#_update_you_feature_branch">1.4. Update you Feature Branch</a></li>
-<li><a href="#_merge_feature_back_to_the_develop_branch">1.5. Merge Feature Back to the Develop Branch</a></li>
-<li><a href="#_merge_back_to_the_mastermain_branch">1.6. Merge Back to the Master/Main Branch</a></li>
-</ul>
-</li>
-<li><a href="#_core_development">2. Core Development</a>
-<ul class="sectlevel2">
-<li><a href="#_checkout_branch_module_integration">2.1. Checkout Branch module-integration</a></li>
-<li><a href="#_pull_changes_from_modules">2.2. Pull changes from modules</a></li>
-<li><a href="#_push_changes">2.3. Push changes</a></li>
-<li><a href="#_pull_request_to_develop">2.4. Pull Request to Develop</a></li>
-<li><a href="#_pull_request_to_main">2.5. Pull Request to Main</a></li>
+<li><a href="#_beschreibung_der_ausgangsituation">1.1. Beschreibung der Ausgangsituation</a></li>
+<li><a href="#_istzustand">1.2. Istzustand</a></li>
+<li><a href="#_problemstellung">1.3. Problemstellung</a></li>
+<li><a href="#_ziele">1.4. Ziele</a></li>
+<li><a href="#_mengengerüst">1.5. Mengengerüst</a></li>
+<li><a href="#_meilensteine">1.6. Meilensteine</a></li>
 </ul>
 </li>
 </ul>
@@ -691,164 +466,201 @@ pre.rouge .hll * {
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_module_development"><a class="anchor" href="#_module_development"></a>1. Module Development</h2>
+<h2 id="_pflichtenheft"><a class="anchor" href="#_pflichtenheft"></a>1. Pflichtenheft</h2>
 <div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="images/module_development.png" alt="module development">
+<div class="sect2">
+<h3 id="_beschreibung_der_ausgangsituation"><a class="anchor" href="#_beschreibung_der_ausgangsituation"></a>1.1. Beschreibung der Ausgangsituation</h3>
+<div class="paragraph">
+<p>Ein Teil der 5-jährigen Ausbildung an der HTBLA Leonding ist die Arbeit an Projekten.
+Es gibt einige offene und unvollendete Projekte und eines von ihnen ist Leo-IOT.
+Es fehlt ein Simulator welcher gemockte Werte für beliebige
+Räume, an einen MQTT-Broker sendet.</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_istzustand"><a class="anchor" href="#_istzustand"></a>1.2. Istzustand</h3>
+<div class="paragraph">
+<p>Die tendenziell fallende Luftqualität in den Klassenräumen führt
+zu schlechterer Lernqualität der Schüler und Konzentrationsmangel.
+Um dies zu ändern, wurde das IoT - Smart School Projekt gestartet.
+Es sollte die Luftqualität in den Klassen mithilfe von Sensorboxen gemessen werden
+und Schüler sollten auf schlechte Luftqualität aufmerksam gemacht werden.
+Neben der Luftqualität gibt es aber auch noch andere Faktoren,
+die sich auf das Klassenklima auswirken. Beispiele sind die
+Lautstärke, Temperatur oder Luftfeuchtigkeit.
+Mithilfe eines 3D Modells des Schulgebäudes werden diese Daten anschaulich präsentiert.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_problemstellung"><a class="anchor" href="#_problemstellung"></a>1.3. Problemstellung</h3>
+<div class="paragraph">
+<p>Aktuell gibt es keine Testwerte für das Projekt. Aus diesem Grund wurde ein Simulator in Auftrag gegeben, welcher
+gemockte Werte an einen MQTT-Broker sendet. Außerdem kann man beliebig viele Räume erstellen und löschen. Diese bekommen
+dann Testdaten welche mit einem Java-Programm generiert werden.
+=== Aufgabenstellung</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>PR: Pull Request</p>
-</li>
-</ul>
-</div>
-<div class="sect2">
-<h3 id="_feature_pull_request"><a class="anchor" href="#_feature_pull_request"></a>1.1. Feature Pull Request</h3>
-<div class="paragraph">
-<p>Must include</p>
-</div>
+<p>Implementierung des Simulators</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Implementation of the feature</p>
+<p>MQTT-Server zum Laufen bringen und Werte an ihn senden</p>
 </li>
 <li>
-<p>Tests for the feature (Unittests and Integrationstests if necessary)</p>
+<p>Dokumentation erstellen</p>
 </li>
 <li>
-<p>Documentation about the feature</p>
+<p>Milestones</p>
+</li>
+<li>
+<p>User-Stories</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>as seen in the picture above.</p>
+</li>
+</ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_switch_to_develop"><a class="anchor" href="#_switch_to_develop"></a>1.2. Switch to Develop</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code>git checkout develop</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_create_a_new_feature"><a class="anchor" href="#_create_a_new_feature"></a>1.3. Create a new Feature</h3>
-<div class="paragraph">
-<p>Replace <code>&lt;name&gt;</code> with the name of you feature.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code>git branch feature/&lt;name&gt;
-git checkout feature/&lt;name&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Now you can develop your feature on your own branch.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_update_you_feature_branch"><a class="anchor" href="#_update_you_feature_branch"></a>1.4. Update you Feature Branch</h3>
-<div class="paragraph">
-<p>Sometimes you want to get the new changes of the develop branch into you branch.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code>git merge develop</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_merge_feature_back_to_the_develop_branch"><a class="anchor" href="#_merge_feature_back_to_the_develop_branch"></a>1.5. Merge Feature Back to the Develop Branch</h3>
-<div class="paragraph">
-<p>Merging back to the develop branch should be done through a pull request. Create a pull request on GitHub and wait for someone to review it.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_merge_back_to_the_mastermain_branch"><a class="anchor" href="#_merge_back_to_the_mastermain_branch"></a>1.6. Merge Back to the Master/Main Branch</h3>
-<div class="paragraph">
-<p>Merging back to the <code>master</code>/<code>main</code> branch requires a Pull Request. Merging back to the master Branch should only be required at the end of a sprint.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_core_development"><a class="anchor" href="#_core_development"></a>2. Core Development</h2>
-<div class="sectionbody">
+<div class="sect3">
+<h4 id="_funktionale_anforderungen"><a class="anchor" href="#_funktionale_anforderungen"></a>1.3.1. Funktionale Anforderungen</h4>
+<div class="sect4">
+<h5 id="_use_case"><a class="anchor" href="#_use_case"></a>Use-Case</h5>
 <div class="imageblock">
 <div class="content">
-<img src="images/core_development.png" alt="core development">
-</div>
-</div>
-<div class="sect2">
-<h3 id="_checkout_branch_module_integration"><a class="anchor" href="#_checkout_branch_module_integration"></a>2.1. Checkout Branch module-integration</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="shell script">git checkout module-integration</code></pre>
+<img src="../images/User-Case1.png" alt="User Case1" width="359" height="310">
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_pull_changes_from_modules"><a class="anchor" href="#_pull_changes_from_modules"></a>2.2. Pull changes from modules</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="shell script">git submodule foreach git pull</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_push_changes"><a class="anchor" href="#_push_changes"></a>2.3. Push changes</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="shell script">git push origin module-integration</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_pull_request_to_develop"><a class="anchor" href="#_pull_request_to_develop"></a>2.4. Pull Request to Develop</h3>
-<div class="paragraph">
-<p>Create a Pull request to merge into the <code>develop</code> branch on GitHub. This Pull Request should be reviewed by more than one person. Best scenario: all developers.</p>
-</div>
-<div class="admonitionblock note">
-<table>
+<div class="sect4">
+<h5 id="_charakterisierende_informationen_use_case_usecase"><a class="anchor" href="#_charakterisierende_informationen_use_case_usecase"></a>Charakterisierende Informationen Use-Case usecase</h5>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Once Successfully merged the CI Tests should be executed in the gh action pipeline
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Übergeordneter elementarer Geschäftsprozess:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Simulator soll Werte an beliebig viel erstellte Räume senden.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ziel des Use Cases:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eine Person kann raum erstellen und dann die Daten sehen</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Umgebende Systemgrenze:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Von der Datenerfassung von den Klassen bis zum Simulator.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bedingung bei erfolgreicher Ausführung:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die richtigen Daten werden angezeigt und veranschaulicht.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung:</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Simulator veröffentlicht Werte auf dem MQTT Broker</p>
+</li>
+<li>
+<p>Der Quarkus, welcher den MQTT Broker "abonniert" hat, bekommt seine Daten</p>
+</li>
+<li>
+<p>Über den Quarkus Server werden die angeforderten Daten aufgerufen</p>
+</li>
+<li>
+<p>Die Werte werden dem User auf dem Client angezeigt</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beteiligte Nutzer:</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Lehrer</p>
+</li>
+<li>
+<p>Schüler</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Auslösendes Ereignis:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bei Datenaufruf</p></td>
+</tr>
+</tbody>
 </table>
 </div>
 </div>
+</div>
 <div class="sect2">
-<h3 id="_pull_request_to_main"><a class="anchor" href="#_pull_request_to_main"></a>2.5. Pull Request to Main</h3>
+<h3 id="_ziele"><a class="anchor" href="#_ziele"></a>1.4. Ziele</h3>
 <div class="paragraph">
-<p>Create a Pull request to merge into the <code>main</code> branch on GitHub. This Pull Request should be reviewed by more than one person. Best scenario: all developers.</p>
+<p>Hilfestellung zum Testen des Projekts durch Simulierte Werte für die Räume der Schule.</p>
 </div>
-<div class="admonitionblock note">
-<table>
+</div>
+<div class="sect2">
+<h3 id="_mengengerüst"><a class="anchor" href="#_mengengerüst"></a>1.5. Mengengerüst</h3>
+<div class="paragraph">
+<p>In einem bestimmten Zeitintervall werden Daten vom Simulator an den MQTT Broker gesendet.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_meilensteine"><a class="anchor" href="#_meilensteine"></a>1.6. Meilensteine</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Once Successfully merged the CI Tests and Deployment should be executed in the gh action pipeline
-</td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Meilensteine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datum</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Simulator</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">23.05.2021</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Pflichtenheft</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">23.05.2021</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Doku</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.06.2021</p></td>
+</tr>
+</tbody>
 </table>
-</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-14 22:08:58 UTC
+Version 1.0.0<br>
+Last updated 2022-01-14 23:07:00 UTC
 </div>
 </div>
 </body>

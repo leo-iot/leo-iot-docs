@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Git Secret</title>
+<title>Notizen</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,45 +437,361 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-pre.rouge .hll {
-  background-color: #ffc;
-}
-pre.rouge .hll * {
-  background-color: initial;
-}
-</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Git Secret</h1>
+<h1>Notizen</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_intro">1. Intro</a></li>
+<li><a href="#_09042021">1. 09042021</a></li>
+<li><a href="#_14042021">2. 14042021</a></li>
+<li><a href="#_18042021">3. 18042021</a></li>
+<li><a href="#_16052021">4. 16052021</a></li>
+<li><a href="#_21052021">5. 21052021</a></li>
+<li><a href="#_25062021">6. 25062021</a></li>
+<li><a href="#_19092021">7. 19092021</a></li>
+<li><a href="#_04102021">8. 04102021</a></li>
+<li><a href="#_11102021">9. 11102021</a></li>
+<li><a href="#_15102021">10. 15102021</a></li>
+<li><a href="#_22102021">11. 22102021</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_09042021"><a class="anchor" href="#_09042021"></a>1. 09042021</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><span class="image"><img src="images/git-secret-big.png" alt="git secret big"></span></p>
+<p>dummy generator in das 3D Model  einbauen
+zahlen und werte generieren
+für jeden Raum einen kleinen Kommentar /description als text
+prime ng /material fürs dashboard nutzen
+soll ansprechend sein</p>
+</div>
+<div class="paragraph">
+<p>Dashboard</p>
+</div>
+<div class="paragraph">
+<p>es gibt mind. 3 Bereiche / Sections
+daten sollen interresant aussehen
+dashboard schöner gestalten
+tram section muss weg
+bei der Roomselection ein Bild hinzufügen
+freie definierung der Räume
+viele graphische elemente hinzufügen</p>
+</div>
+<div class="paragraph">
+<p>location description hinzufügen
+devices rekursion entfernen
+message wieder hinzufügen
+language id wird nicht benötigt
+nach der android language halten
+mesurement units hinzufügen
+units table adden</p>
+</div>
+<div class="paragraph">
+<p>termin mit prof. Köck ausmachen
+nicht am MOntag, in den ITP oer der Freistudnen des Stütz</p>
+</div>
+<div class="paragraph">
+<p>Frontend holt sich die werte vom Mqtt</p>
+</div>
+<div class="paragraph">
+<p>Fragen an Köck unter anderem an uns:
+Sollen die Messwerte im Backend gespeichert werden?</p>
+</div>
+<div class="paragraph">
+<p>Antwort:
+Ja, da diese augewertet werden müssem.
+Frage: welche DB: zeitörientiert
+Grafana ist nicht geeignet</p>
+</div>
+<div class="paragraph">
+<p>Woher kommen die Initialwerte für doe anzeige der Räume
+des 3D-Modells?
+Woher kommen die aktuellen WErte
+Variante 1
+beispielnach öffnen des 3DM-Modells /dashboards werden noc keone Werte angezeigt</p>
+</div>
+<div class="paragraph">
+<p>die Werte kommen dann im Sekunden, oder Minutrntakt sld MQRR-Message und das Modell weird lagnsam aktualisiert</p>
+</div>
+<div class="paragraph">
+<p>Vorteil Man braucht kein Backedn für das 3D-Modell /dashboard
+Variante 2
+die aktuelle gerspeciherten Daten aus dem Backend werden per REST eingelsen und angezeigt</p>
+</div>
+<div class="paragraph">
+<p>Wie sollen die Topics des MQTT organisiert werden?</p>
+</div>
+<div class="paragraph">
+<p>Sollen die Messages im Backend gespeichert werden?
+z.b wann wurde angezeigt das der CO2 Gehalt zu hoch ist</p>
+</div>
+<div class="paragraph">
+<p>max und min werte</p>
+</div>
+<div class="paragraph">
+<p>Die max und min were können nicht den einzelnen Sensortypen zugeordent werden (z.b Temperatur )sondern sinnd den einzelenen Sneoren zuzuordenen, da in verschieden Räumen durchaus verschideenen Termeraturbreiche sinvoll sind</p>
+</div>
+<div class="paragraph">
+<p>zb
+in Klassenräume eher wärmer
+in Rechenzentrum kühler
+ev Default Werten in den Sensortypen</p>
+</div>
+<div class="paragraph">
+<p>wir vereinbaren :
+das frontend mit dem broker verbinden
+simulator team soll für alle räume fake werte generiern.
+nach der Besprechung ein einfaches modell für das frontend machen</p>
+</div>
+<div class="paragraph">
+<p>das Datenmodell ist basierend</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_intro"><a class="anchor" href="#_intro"></a>1. Intro</h2>
+<h2 id="_14042021"><a class="anchor" href="#_14042021"></a>2. 14042021</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>We use git secret ot store sensitive information like the password of the mqtt broker. Don&#8217;t Confuse git secret with <a href="https://docs.github.com/en/actions/reference/encrypted-secrets">GitHub Secrets</a> and <a href="https://github.com/awslabs/git-secrets">git-secrets</a>. Look more into it <a href="https://git-secret.io/">here</a>.</p>
+<p>influx db vs timescale DB
+influx hat eine community version</p>
+</div>
+<div class="paragraph">
+<p>Frage die auszuarbeiten sind:
+gibt es für timesclae db community version?
+timescale gibt es langzeit daten?
+schauen welche datenbank besser geignet sind?
+gibt eine Lizenz für postgress, etc.?</p>
+</div>
+<div class="paragraph">
+<p>topic struktur
+geschoss raum(Sensorboxen) sensor</p>
+</div>
+<div class="paragraph">
+<p>Rssi misst die Feldstärke des Wifis
+ab -90 ist die Feldstärke bedenklich
+Ip-Addresse wird reportet
+wifi power beschreibt die aktulle leistungseinstellung am esp32
+reduzierte power bei guter Wlan power
+example: rssi: 11.25 heißt &#8594; Leistung wurde um diesen Wert db reduziert</p>
+</div>
+<div class="paragraph">
+<p>durch ein Monitoring tool kann man diese Werte
+auch auslesen</p>
+</div>
+<div class="paragraph">
+<p>config.txt müssen wir uns anschauen</p>
+</div>
+<div class="paragraph">
+<p>in der main.cpp
+im Thinspezifischen Teil stehen werte die nur
+in der Konfiguriert werden können
+sollte diese WErte anzugeben ist optional,
+ansonsten nimmt es default Werte</p>
+</div>
+<div class="paragraph">
+<p>in allen Sensorboxen ist eine RuleEngine eingebaut
+schaltet Neopixel leuchtring
+Leuchtring</p>
+</div>
+<div class="paragraph">
+<p>Classroomcontroller ist die RuleEngine</p>
+</div>
+<div class="paragraph">
+<p>wir sollen einen Snapshot machen</p>
+</div>
+<div class="paragraph">
+<p>köck eine email schreiben bezüglich der absoluten Pfade</p>
+</div>
+<div class="paragraph">
+<p>pull requets oder eine issue machen</p>
+</div>
+<div class="paragraph">
+<p>was ist neu bei dem repo?
+es gitb einen Studenzähler
+sollten das Repo neu pullen before wir es auf die boxen hochladen</p>
+</div>
+<div class="paragraph">
+<p>Datenmodell
+thing: hat mehrere Sensoren
+Sensor hat die Sensortype als lookup table
+Values bei dem sensoren sind immer double
+es gibt für jeden actor einen Actotype</p>
+</div>
+<div class="paragraph">
+<p>ein Sensor hat einen State und ein Command Topic zb</p>
+</div>
+<div class="paragraph">
+<p>og/107/rssi/state
+og/107/rssi/command</p>
+</div>
+<div class="paragraph">
+<p>welche Messages gibt es?
+Actor, Sensor</p>
+</div>
+<div class="paragraph">
+<p>Messages werden für&#8217;s erste nicht benötigt</p>
+</div>
+<div class="paragraph">
+<p>empfolene Logger: Seq, Jäger</p>
+</div>
+<div class="paragraph">
+<p>Wir müssen uns die Logger Seq und Jäger anschauen</p>
+</div>
+<div class="paragraph">
+<p>der esp wird vlt. nach 3 Tagen abstürzen</p>
+</div>
+<div class="paragraph">
+<p>udplogger blast die werte ins wLan hinaus</p>
+</div>
+<div class="paragraph">
+<p>wie kriegt der Logserver die Logs?
+Wir müssen mit den sysadmin reden, wenn wir für
+udp broadcast nutzen möchten
+die persistierten werte sollten im DAshboard angezeigt werden
+summary:
+sind unsere Fragenliste durgegangen &#8594; siehe iot-fragen.adoc
+erstellen eines neuen Datanmodelles
+neues Dashboard Task
+beim Programmieren sollte man die Quelle
+quelle des wissen hinzufügen.
+Todo:
+- seq logger implementieren
+- benötigen einen MQTT-Mapper
+- neues Datenmodell implementierne
+- sensorboxen mit dem neuen Stand des Repo(vom köck)
+- schauen welche db besser ist
+- sysadmin frageb bzgl udp
+- esp projekt einen Issue erstllen bzgl. des Last Wills
+- eine Website erstellen, welche die Daten auf charts anzeigt (nicht das Dashboard)
+(- auf der Ebene der Sensoren arbeiten)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_18042021"><a class="anchor" href="#_18042021"></a>3. 18042021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>seperate Pflichtenhefte erstellen und dazu eine api
+den neuen Simulator Prototyp einbinden
+das neues Dashboard erklärt und umsetzen</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_16052021"><a class="anchor" href="#_16052021"></a>4. 16052021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>talked about current tasks
+simulator status
+talked about the sensor position
+talked issues
+questions at stütz:
+wohin mit den sensore soin de hin</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_21052021"><a class="anchor" href="#_21052021"></a>5. 21052021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>im protocol eine namens legende hinzufügen
+protocol issue nummer hinzufügen
+meeting of protocol from docker template</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_25062021"><a class="anchor" href="#_25062021"></a>6. 25062021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>system architecture image fix typo
+bei git secret können auch files encrypted und gespeichert werden
+presentations folie überarbeiten
+bei functionality folie value beifügen
+niemals sachen auf eine Folie tun die man nicht erklären kann
+datenmodel in intelij dass layout Nets &#8594; Oragnic nutzen
+bei der Folie Backend Api rechts eine System Architktur beifügen
+webuntis ist gut, weil jeder einen Zugriff drauf hat</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_19092021"><a class="anchor" href="#_19092021"></a>7. 19092021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>status update
+über die neuen mitglieder diskutiert
+slides zu dem Repo hinzufügen? &#8594; besprochen
+neuen termin für die wöchentlichen meetings auf Montag verschoben</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_04102021"><a class="anchor" href="#_04102021"></a>8. 04102021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>einführung der Neulinge
+Neuling ins Youtrack hizugefügt
+haben über die KI gesprochen
+müssen mit Stütz einen Termin machen
+haben Sie zum Repo hinzugefügt</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_11102021"><a class="anchor" href="#_11102021"></a>9. 11102021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vinzent, Felix, Tiblue, Quririn, KingFuezi
+neue tasks besprochen
+termin mit den Neulingen ausgemacht</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_15102021"><a class="anchor" href="#_15102021"></a>10. 15102021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>EQ, EP, AE, BS, KP, RJ,
+meeting in der 4AHIF
+Angular Einführung
+neues 3D Modell wird gemacht
+entschlossen, dass die Lokalisierung abgeschaffen wird
+potenziell wird das 3d Model Team auf zwei aufgesplittet
+ST fragen wie der Sensorsimulator eingesetzt wird</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_22102021"><a class="anchor" href="#_22102021"></a>11. 22102021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>rollen der einzelnen Teammitglieder:
+Ecker: Backend redesign  endpoints
+Edlinger: backend swagger-api stuff
+Klausner: presentation about the modules
+Knogler: presentation about the modules
+Kronreif: value-simulator
+Riser: value-simulator
+Abazovic: learning phase
+Bogdan: learning phase
+Kerschbaum: learning phase
+Rathberger: learning phase
+todo:
+- docker images verbessern
+dashboard und 3D-model auf den beiden oberen Bildschirmen aufteilen
+deadline 10:30 Uhr</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-14 22:08:58 UTC
+Last updated 2022-01-14 23:06:59 UTC
 </div>
 </div>
 </body>
