@@ -2,4 +2,4 @@
 
 == Getting Started
 
-- link:getting-started.adoc[getting started]
+- link:getting-started[getting started]
