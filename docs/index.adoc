@@ -30,7 +30,7 @@ Documentation of general things which are not related to one specific module.
 For information of specific modules click one of the modules below. Modules are internal and required by the leo-iot application.
 
 - link:leo-iot-web/index[Web]
-- link:leo-iot-web/index[Server]
+- link:leo-iot-server/index[Server]
 
 === Related Projects
 
@@ -44,5 +44,5 @@ For information about related project click one of the related projects below. T
 Official Project documents.
 
 * link:project-documents/System-Specification[System Specification]
-* link:project-documents/Proposal.adoc[Proposal]
+* link:project-documents/Proposal[Proposal]
 
