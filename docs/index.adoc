@@ -1,26 +1,48 @@
-= Leo-Iot
-EQ,EP,OJ, SK, FK
-1.0.0, 2020-11-2:
+= Leo IOT Documentation
 ifndef::imagesdir[:imagesdir: images]
 
-== About
+== System Architecture
 
-Leo IOT is a project created to measure various real world data
-such as temperature and air moisture which are collected from sensor
-boxes placed in the rooms of the school building. The application
-will display the data on a dashboard and a 3D-Modell.
-
-== Preview
-
-- http://vm139.htl-leonding.ac.at/en/3d[3d Model]
-- http://vm139.htl-leonding.ac.at/en/dashboard[DashBoard]
-
-== Github
-
-* https://github.com/htl-leonding-project/leo-iot[GitHub]
+image:system_architecture_new.png[width=800px]
 
 
+== Meeting Protocol
+
+Protocol where every meeting should be documented.
+
+* link:meeting-protocol/index[meeting protocols]
 
 
+== Documentation
 
+=== Generell
+
+Documentation of general things which are not related to one specific module.
+
+* link:generel/getting-started[getting started]
+* link:generel/git[git]
+* link:generel/github-secrets[GitHub Secrets]
+* link:generel/git-secret[git secret]
+* link:generel/docker-compose[Docker Compose Files]
+
+=== Modules
+
+For information of specific modules click one of the modules below. Modules are internal and required by the leo-iot application.
+
+- link:leo-iot-web/index[Web]
+- link:leo-iot-web/index[Server]
+
+=== Related Projects
+
+For information about related project click one of the related projects below. Those are not essential for the leo-iot application but are part of the leo-iot ecosystem.
+
+- link:value-simulator/index[Value Simulator]
+- link:leo-box/index[Leo Box]
+
+== Project Documents
+
+Official Project documents.
+
+* link:project-documents/System-Specification[System Specification]
+* link:project-documents/Proposal.adoc[Proposal]
 

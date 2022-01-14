@@ -16,37 +16,13 @@ git clone https://github.com/htl-leonding-project/leo-iot
 
 == Getting Started Development
 
-=== Start Timescale DB
+=== Server
 
-The production databse and the development database are the same. There is a extra docker-compose file for starting only the database. This container can be executed by running the following commands.
-
-[source,shell]
-----
-cd database
-docker-compose up -d
-----
-
-NOTE: -d option is for daemon. If you don't want to start it in the background, remove this option.
-
-=== Start Quarkus in development Mode
-
-For starting quarkus simply start quarkus in the development. This works with the following command
-
-[source,shell]
-----
-cd backend
-./mvnw clean compile quarkus:dev
-----
+Please refer to the link:../leo-iot-server/getting-started[getting started] page of the server module.
 
 === Start Angular in development Mode
 
-The frontend can be started in development mode with the start npm script.
-
-[source,shell]
-----
-cd frontend
-npm start
-----
+Please refer to the link:../leo-iot-web/getting-started[getting started] page of the server module.
 
 == Getting Started Production
 
