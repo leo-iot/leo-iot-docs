@@ -1,0 +1,18 @@
+= Documentation Structure
+ifndef::imagesdir[:imagesdir: ../images]
+
+
+== Folder Structure
+
+image:docs-structure.png[]
+
+1. General Documentation for the leo-iot Application.
+2. Images for the documentation link them like this (`\image:<image-out-of-images-dir>[]`).
+3. Everything related to the sensor box named Leo Box.
+4. Everything related the backend of the leo iot application.
+5. Everything related to the web module (this includes the 3d Model and the Dashboard).
+6. Meeting protocol. The index file in this directory includes the documentation of every meeting.
+7. Every file in this directory is not linked anywhere in the documentation
+8. Project documents like the system specification are located here
+9. Slides for project presentation. Every file in there will be converted in a reveal js slides document.
+10. Everything related to the value simulator is documented here
