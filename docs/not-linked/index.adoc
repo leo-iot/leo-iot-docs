@@ -1,0 +1,3 @@
+= Not Linkes
+
+Documents in this directory are not linked anywhere. If you want to link them please move them into fitted directory.
