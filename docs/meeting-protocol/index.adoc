@@ -1,4 +1,5 @@
 = Meeting-Protocol
+:icons: font
 
 == Legend
 |===
@@ -16,6 +17,8 @@
 | Köck Gerald | KG
 
 |===
+
+WARNING: Sorry for language inconsistencies. If someone has time it would be kind to translate german written protocols into english. Thank You.
 
 == 06.12.2020
 * EQ, EP, KF, KS, OJ, KV, RF
@@ -380,3 +383,25 @@ EQ, ST
 ----
 sudo apt update && sudo apt dist-upgrade -y && apt autoremove
 ----
+
+== 10.01.2022
+
+NOTE: Teilnehmer wurden nicht mitprotokolliert
+
+* keine wirklcihen Änderungen im plan
+* keiner hatte was gemacht über die Weihnachtsferien
+* Sprintende wurde auf eine woche verschoben
+
+== 17.01.2022
+
+KP, RJ, EQ
+
+* Sprint review
+* Planung des neuen sprintes wurde um eine woche verschoben, da wir mehr anwesende brauchen
+* Schwierigkeiten beim auswählen von räumen
+** Wird noch dran gearbeited
+* Die alte repo ist noch nicht transferiert worden
+* CI funktioniert wieder mit den Modulen
+* Documentation ist überarbeited worden
+* Es wurden neue Readme erstellt
+* Es wurde eine Organisations Readme erstellt
