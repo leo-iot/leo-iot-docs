@@ -24,6 +24,7 @@ Documentation of general things which are not related to one specific module.
 * link:generel/github-secrets[GitHub Secrets]
 * link:generel/git-secret[git secret]
 * link:generel/docker-compose[Docker Compose Files]
+* link:generel/documentation-structure[documentation structure]
 
 === Modules
 
