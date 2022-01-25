@@ -1,0 +1,43 @@
+= Value Simulator  Documentation
+FR, VK
+1.0.1, 2021-11-18:
+ifndef::imagesdir[:imagesdir: images]
+
+== Architecture
+image:system_architecture_new_value_simulator.png[width=800px]
+
+== Purpose
+
+The aim of the Simulator is to send testdata to a MQTT-Broker, which can be used to test the software without a physical sensor.
+
+In the future the Simulator will persist Data in a Database. Also all rooms without a sensorbox should recieve mock values from the value simulator automatically. The IoT-in-charge can configure the system to display the values of the ValueSimulator for this room.
+
+
+=== How to setup the Simulator for development?
+Currently, the value-simulator only works local, in the IDE. We plan on deploy the project to a vm.
+Start Quarkus with
+
+[source,console]
+----
+./mvnw clean compile quarkus:dev
+----
+
+Connect with the MQTT-Server. For example with link:http://mqtt-explorer.com/[MQTT-Explorer]. Ask the leader for the Password.
+
+image::docu1.png[]
+
+Use a Tool like link:https://www.postman.com/downloads/[Postman] to Add or Delete Rooms. Make sure that you choose POST instead of GET on the left.
+
+image::docu2.png[]
+
+then you can see the new Room displayed on the MQTT-Server. Every Room without a sensor has simulated values. The Temperature for example, changes his value just a little bit like the real temperature value would.
+
+image::docu3.png[]
+
+If you want to delete the room you created before you can use postman like in this picture again.
+
+image::docu4.png[]
+
+=== How to setup the Simulator in runnable version?
+
+...Coming soon...
