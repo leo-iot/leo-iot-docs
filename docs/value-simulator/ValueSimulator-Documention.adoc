@@ -38,6 +38,13 @@ If you want to delete the room you created before you can use postman like in th
 
 image::docu4.png[]
 
+If you want to update the name of a room you can do the same steps like addRoom, but you must put the new parameter in your post command 
+
+[source,html]
+----
+localhost:8080/api/updateRoom/room1?newName=newRoom1
+----
+
 === How to setup the Simulator in runnable version?
 
 ...Coming soon...
