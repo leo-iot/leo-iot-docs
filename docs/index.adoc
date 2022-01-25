@@ -37,7 +37,8 @@ For information of specific modules click one of the modules below. Modules are 
 
 For information about related project click one of the related projects below. Those are not essential for the leo-iot application but are part of the leo-iot ecosystem.
 
-- link:value-simulator/index[Value Simulator]
+- link:value-simulator/index[Value Simulator System Specification]
+- link:value-simulator/valueSimulator-Documention[Value Simulator Docu]
 - link:leo-box/index[Leo Box]
 
 == Project Documents
