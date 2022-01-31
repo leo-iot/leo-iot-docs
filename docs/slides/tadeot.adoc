@@ -1,0 +1,88 @@
+= Leo IOT
+ifndef::imagesdir[:imagesdir: ../images]
+:customcss: css/style.css
+
+== Situation
+
+[%step]
+* Schlechte Luftqualität
+* Schlechte Konzentration
+* Weniger Spaß in der Schule
+
+== Wie lösen wir so ein problem
+
+* Luftqualität messen
+* Warnungen bei zu hohen Werten
+* Grafische Darstellung
+
+== Leo Box
+
+[.columns.is-vcentered]
+=== Was misst die Leo Box
+
+[.column]
+--
+[%step]
+* CO2
+* Temperatur
+* Luftfeuchtigkeit
+* Helligkeit
+* Bewegung
+* Lautstärke
+* Drucksensor
+--
+
+[.column]
+--
+image::sensor_box.png[]
+--
+
+=== Platzierung der Leo Boxen
+
+image:school_with_sensorboxes.png[]
+
+=== Verbindungen der Leo Boxen
+
+image:simple_architecture.png[]
+
+== Grafische Darstellung
+
+[.columns.is-vcentered]
+=== Dashboard
+
+[.column]
+--
+* Ansicht von allen ebenen in dem Schulgebäude
+* Leichtes Abrufen von den Sensordaten
+* Daten in Graphen dargestellt
+* Voraussehung der Daten mithilfe von künstlicher Intelligent
+--
+
+[.column]
+--
+image:dashboard_old_screenshot.png[]
+--
+
+[.columns.is-vcentered]
+=== 3d Modell
+
+[.column]
+--
+* 3d Modell der Schule
+* Auswählen der Etagen
+* Auswählen von Räumen
+* Sensordaten rechts in einem Mnü
+--
+
+[.column]
+--
+image:3d_model_old_screenshot.png[]
+--
+
+== System Architektur
+
+
+
+
+
+
