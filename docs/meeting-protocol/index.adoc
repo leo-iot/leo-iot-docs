@@ -418,3 +418,19 @@ RJ, KP, ST
 * Nächste Schritte überlegen und diese vorlegen bis 1.02.2022
 * HTL-Leonding 3D Projekt analysieren bis 28.02.2022
 https://github.com/htl-leonding-project/htl-leonding-3d
+
+== 31.01.2022
+
+RJ, KP, EQ
+
+* New Sprint
+* 3d Model team is fixing the struture in the frontend
+* EQ ist implementing a homepage for leo iot
+* EQ refactoring backend structure
+* EQ implementing developement pipeline
+* EQ implementing cd for the web repository
+* EQ adding vcs to youtrack
+* RJ fixing animations 3d model
+* RJ fixing click accuracy
+* RJ removing code duplication
+* value simulator team meeting is tomorrow
