@@ -405,3 +405,16 @@ KP, RJ, EQ
 * Documentation ist überarbeited worden
 * Es wurden neue Readme erstellt
 * Es wurde eine Organisations Readme erstellt
+
+== 31.01.2022
+
+RJ, KP, ST
+
+* Projektbesprechung
+* Vereinbart, dass beim alten Model weitergearbeitet wird
+* Altes Model fixen(Animation beim Stockwerk hinzufügen)
+* Code Reengineering
+* Schnittstellen analysieren
+* Nächste Schritte überlegen und diese vorlegen bis 1.02.2022
+* HTL-Leonding 3D Projekt analysieren bis 28.02.2022
+https://github.com/htl-leonding-project/htl-leonding-3d
