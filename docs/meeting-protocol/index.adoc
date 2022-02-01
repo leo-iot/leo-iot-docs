@@ -434,3 +434,22 @@ RJ, KP, EQ
 * RJ fixing click accuracy
 * RJ removing code duplication
 * value simulator team meeting is tomorrow
+
+== 1.02.2022
+
+RJ, KP, ST
+
+* Projektbesprechung
+* Was wird getan
+** Fix Old Model
+** Reengineer Code in web/school3d
+** Analyse/Fix Displaying Data from Rooms
+** Loading Screen
+** Restlichen Komponenten analysieren
+* System Architecture Abbildung falsch
+ https://leo-iot.github.io/leo-iot-docs/
+* Ideen:
+** Über MQTT nur auf gewisse clients zugreifen
+** Demo mode
+** Zum ansteuern des 3d models
+* KP Möglicherweise am Dashboard arbeiten
