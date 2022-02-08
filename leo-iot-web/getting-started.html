@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Getting Started</title>
+<title>Development</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -655,56 +655,174 @@ pre.rouge {
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Getting Started</h1>
+<h1>Development</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_development">1. Development</a></li>
-<li><a href="#_production">2. Production</a>
-<ul class="sectlevel2">
-<li><a href="#_build">2.1. Build</a></li>
-<li><a href="#_run">2.2. Run</a></li>
-</ul>
-</li>
+<li><a href="#_prerequesites">1. Prerequesites</a></li>
+<li><a href="#_clone_the_repository">2. Clone the repository</a></li>
+<li><a href="#_install_dependencies">3. Install dependencies</a></li>
+<li><a href="#_development_server">4. Development server</a></li>
+<li><a href="#_code_scaffolding">5. Code scaffolding</a></li>
+<li><a href="#_build">6. Build</a></li>
+<li><a href="#_running_unit_tests">7. Running unit tests</a></li>
+<li><a href="#_running_end_to_end_tests">8. Running end-to-end tests</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_development"><a class="anchor" href="#_development"></a>1. Development</h2>
+<h2 id="_prerequesites"><a class="anchor" href="#_prerequesites"></a>1. Prerequesites</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Node.js</p>
+</li>
+<li>
+<p>npm</p>
+</li>
+<li>
+<p>Angular CLI</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>First of all make a quick check on your node and angular versions.
+Running</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="shell script">ng --version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>should return:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="shell script">Angular CLI: [at least 7.0]
+Node: [at least 8]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Update or install missing versions.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_clone_the_repository"><a class="anchor" href="#_clone_the_repository"></a>2. Clone the repository</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="shell script">npm start</code></pre>
+<pre class="rouge highlight"><code data-lang="shell script">git clone https://github.com/leo-iot/leo-iot-web</code></pre>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_production"><a class="anchor" href="#_production"></a>2. Production</h2>
+<h2 id="_install_dependencies"><a class="anchor" href="#_install_dependencies"></a>3. Install dependencies</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_build"><a class="anchor" href="#_build"></a>2.1. Build</h3>
+<div class="paragraph">
+<p>Navigate to the project directory and run</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="shell script">docker build . -t leo-iot-web</code></pre>
+<pre class="rouge highlight"><code data-lang="shell script">npm install</code></pre>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_run"><a class="anchor" href="#_run"></a>2.2. Run</h3>
+</div>
+<div class="sect1">
+<h2 id="_development_server"><a class="anchor" href="#_development_server"></a>4. Development server</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Run</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="shell script">docker run leo-iot-web</code></pre>
+<pre class="rouge highlight"><code data-lang="shell script">ng serve</code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>for a dev server. Navigate to <code><a href="http://localhost:4200/" class="bare">http://localhost:4200/</a></code>. The app will automatically reload if you change any of the source files.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_code_scaffolding"><a class="anchor" href="#_code_scaffolding"></a>5. Code scaffolding</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Run</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="shell script">ng generate component component-name</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>to generate a new component. You can also use</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="shell script">ng generate directive|pipe|service|class|guard|interface|enum|module`.</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_build"><a class="anchor" href="#_build"></a>6. Build</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Run</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="shell script">ng build</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>--prod</code> flag for a production build and <code>--aot</code> for ahead of time compilation.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_running_unit_tests"><a class="anchor" href="#_running_unit_tests"></a>7. Running unit tests</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Run</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="shell script">ng test</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>to execute the unit tests via [Karma](<a href="https://karma-runner.github.io" class="bare">https://karma-runner.github.io</a>). The test are configured to run on TravisCI therefore a HeadlessChrome Browser is used as default browser. You can add browsers in the karma config file.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_running_end_to_end_tests"><a class="anchor" href="#_running_end_to_end_tests"></a>8. Running end-to-end tests</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Run</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="shell script">ng e2e</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>to execute the end-to-end tests via [Protractor](<a href="http://www.protractortest.org/" class="bare">http://www.protractortest.org/</a>).
+E2e tests are defined in /e2e there are only the default files generated by <code>ng new</code>.</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-02-01 15:06:35 UTC
+Last updated 2022-02-08 20:51:21 UTC
 </div>
 </div>
 </body>
