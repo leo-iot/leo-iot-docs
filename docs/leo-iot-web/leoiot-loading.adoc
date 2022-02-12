@@ -1,0 +1,6 @@
+= Leoiot Loading Screen
+
+The script src/assets/images/leoiot-loading/create-loading.sh creates a video
+from the images with specified name leoiot-loading-%d.png in the folder.
+
+This video will be shown while the 3d model is loading.

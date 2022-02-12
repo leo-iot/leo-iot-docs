@@ -3,3 +3,7 @@
 == Getting Started
 
 - link:getting-started[getting started]
+
+== Loading Screen
+
+- link:leoiot-loading.adoc[loading screen]
