@@ -6,4 +6,4 @@
 
 == Loading Screen
 
-- link:leoiot-loading.adoc[loading screen]
+- link:leoiot-loading[loading screen]
