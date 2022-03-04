@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Docker Compose</title>
+<title>Documentation Structure</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -440,74 +440,61 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Docker Compose</h1>
+<h1>Documentation Structure</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_default_docker_compose">1. Default Docker Compose</a>
-<ul class="sectlevel2">
-<li><a href="#_location">1.1. Location</a></li>
-<li><a href="#_purpose">1.2. Purpose</a></li>
-</ul>
-</li>
-<li><a href="#_deploy_docker_compose">2. Deploy Docker Compose</a>
-<ul class="sectlevel2">
-<li><a href="#_location_2">2.1. Location</a></li>
-<li><a href="#_purpose_2">2.2. Purpose</a></li>
-</ul>
-</li>
+<li><a href="#_folder_structure">1. Folder Structure</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_default_docker_compose"><a class="anchor" href="#_default_docker_compose"></a>1. Default Docker Compose</h2>
+<h2 id="_folder_structure"><a class="anchor" href="#_folder_structure"></a>1. Folder Structure</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_location"><a class="anchor" href="#_location"></a>1.1. Location</h3>
 <div class="paragraph">
-<p><code>docker-compose.yml</code></p>
+<p><span class="image"><img src="../images/docs-structure.png" alt="docs structure"></span></p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_purpose"><a class="anchor" href="#_purpose"></a>1.2. Purpose</h3>
-<div class="paragraph">
-<p>With this docker compose you can build the whole project and start it.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_deploy_docker_compose"><a class="anchor" href="#_deploy_docker_compose"></a>2. Deploy Docker Compose</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_location_2"><a class="anchor" href="#_location_2"></a>2.1. Location</h3>
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p><code>docker-compose.deploy.yml</code></p>
+<p>General Documentation for the leo-iot Application.</p>
 </li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_purpose_2"><a class="anchor" href="#_purpose_2"></a>2.2. Purpose</h3>
-<div class="paragraph">
-<p>The deploy docker compose is a special docker compose which doesn&#8217;t include the build paths to the dockerfiles for each component. We only use it for GitHub action deployment</p>
-</div>
-<div class="paragraph">
-<p>With this docker-compose the application will start without the whole project. With the normal docker-compose this is not the case because of the build paths.</p>
-</div>
-<div class="paragraph">
-<p>See more <a href="https://github.com/docker/compose/issues/2945">here</a></p>
-</div>
+<li>
+<p>Images for the documentation link them like this (<code>image:&lt;image-out-of-images-dir&gt;[]</code>).</p>
+</li>
+<li>
+<p>Everything related to the sensor box named Leo Box.</p>
+</li>
+<li>
+<p>Everything related the backend of the leo iot application.</p>
+</li>
+<li>
+<p>Everything related to the web module (this includes the 3d Model and the Dashboard).</p>
+</li>
+<li>
+<p>Meeting protocol. The index file in this directory includes the documentation of every meeting.</p>
+</li>
+<li>
+<p>Every file in this directory is not linked anywhere in the documentation</p>
+</li>
+<li>
+<p>Project documents like the system specification are located here</p>
+</li>
+<li>
+<p>Slides for project presentation. Every file in there will be converted in a reveal js slides document.</p>
+</li>
+<li>
+<p>Everything related to the value simulator is documented here</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-02-12 12:05:24 UTC
+Last updated 2022-03-04 11:01:14 UTC
 </div>
 </div>
 </body>
