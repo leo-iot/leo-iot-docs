@@ -19,11 +19,11 @@ Protocol where every meeting should be documented.
 
 Documentation of general things which are not related to one specific module.
 
-* link:generel/getting-started[getting started]
-* link:generel/git[git]
-* link:generel/github-secrets[GitHub Secrets]
-* link:generel/git-secret[git secret]
-* link:generel/documentation-structure[documentation structure]
+* link:general/getting-started[getting started]
+* link:general/git[git]
+* link:general/github-secrets[GitHub Secrets]
+* link:general/git-secret[git secret]
+* link:general/documentation-structure[documentation structure]
 
 === Modules
 
