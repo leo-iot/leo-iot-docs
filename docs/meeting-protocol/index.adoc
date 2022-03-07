@@ -453,3 +453,19 @@ RJ, KP, ST
 ** Demo mode
 ** Zum ansteuern des 3d models
 * KP Möglicherweise am Dashboard arbeiten
+
+== 7.03.2022
+
+RJ, KP, ST
+
+* Libraries fürs Dashboard:
+** angular gallery
+** angualr card decks
+
+* Funktionen des Dashboards:
+** Räume je nach werte farblich anzeigen(Grün=alles ok, Gelb/Orange=mittelmäßig, rot=schlecht)
+** Bei Click auf einen Raum sollen die Werte des Raumes angezeigt werden
+** Möglicherweise Foto vom ausgewählten Raum anzeigen
+** Sensorboxenübersicht (wieviele in Betrieb, ob aktiv oder passiv)
+** Alarm, wenn Werte nicht passen
+** Anzeige welche Räume die meisten Alarme hatten.
