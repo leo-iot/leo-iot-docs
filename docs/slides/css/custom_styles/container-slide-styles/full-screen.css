@@ -1,0 +1,37 @@
+.container-slide.full-screen {
+    overflow: hidden;
+}
+
+.container-slide.full-screen * {
+    width: 100%;
+    height: 100%;
+    max-width: unset !important;
+    max-height: unset !important;
+    overflow: hidden;
+}
+
+.container-slide.full-screen p {
+    margin: 0 !important;
+}
+
+.container-slide.full-screen p > .image {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.container-slide.full-screen h2 {
+    display: none !important;
+}
+
+.container-slide.full-screen p > .image img {
+    object-fit: cover;
+}
+
+.container-slide.full-screen.no-fit p > .image img {
+    object-fit: fill !important;
+    width: 60% !important;
+    height: auto !important;
+}

@@ -1,0 +1,7 @@
+.container-slide.theater * {
+}
+
+.container-slide.theater .slide-content {
+    width: 80% !important;
+    height: 80% !important;
+}

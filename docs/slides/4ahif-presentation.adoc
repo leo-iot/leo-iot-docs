@@ -1,0 +1,43 @@
+= Leo IOT
+:customcss: css/4ahif-pres.css
+ifndef::imagesdir[:imagesdir: ../images]
+////
+== Ausgangssituation
+
+* Nicht funktionierendes 3D-Model
+
+== Problem
+
+
+
+== Aufgabenstellung (Ergebnis, Leistung)
+
+* 3D-Model fixen
+
+== Ziel (Leistungswirkung)
+
+* Funktionierendes 3D-Model
+
+////
+
+[.custom-slide.container-slide]
+== Structure
+
+[.custom-slide.container-slide.full-screen.no-fit]
+=== Architecture
+
+image:system_architecture_v2.png[architecture, 700]
+
+[.custom-slide.container-slide]
+== Demo
+
+[.custom-slide.container-slide.full-screen]
+=== 3D-Modell
+
+++++
+<iframe src="http://localhost:4200/3d"></iframe>
+++++
+
+////
+== Resümee, Weitere Schritte, …
+////
