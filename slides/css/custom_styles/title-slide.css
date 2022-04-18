@@ -1,0 +1,9 @@
+.title-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-slide h1 {
+    display: none !important;
+}

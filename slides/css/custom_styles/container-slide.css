@@ -1,0 +1,29 @@
+.container-slide {
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 9px 0 grey;
+    box-shadow: 0 0 9px 0 grey;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-slide .slide-content {
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-slide .column {
+    height: 100% !important;
+
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-slide * {
+    color: black !important;
+}

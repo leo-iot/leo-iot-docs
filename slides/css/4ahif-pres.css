@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import "custom_styles/custom-base.css";
+@import "custom_styles/title-slide.css";
+@import "custom_styles/container-slide.css";
+@import "custom_styles/container-slide-styles/horizontal-list.css";
+@import "custom_styles/container-slide-styles/vertical-list.css";
+@import "custom_styles/container-slide-styles/full-screen.css";
+@import "custom_styles/container-slide-styles/theater.css";
