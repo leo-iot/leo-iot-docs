@@ -10,15 +10,20 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 
 
-== Aufgabenstellung (Ergebnis, Leistung)
-
-* 3D-Model fixen
 
 == Ziel (Leistungswirkung)
 
 * Funktionierendes 3D-Model
 
 ////
+
+[.custom-slide.container-slide]
+== Aufgabenstellung
+
+* 3D-Model fixen
+
+* Dashboard überarbeiten
+
 
 [.custom-slide.container-slide]
 == Structure
