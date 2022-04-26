@@ -1,6 +1,4 @@
 = Besprechungsprotokoll 26.04.2022
-firstname lastname
-1.0, yyyy-mm-dd: Some notes
 ifndef::imagesdir[:imagesdir: images]
 :icons: font
 //:sectnums:    // Nummerierung der Überschriften / section numbering
@@ -10,14 +8,14 @@ ifndef::imagesdir[:imagesdir: images]
 
 .Teilnehmer
 |===
-|anwesend
+|Anwesend
 
 
-|A. Rathberger
+|Rathberger
 
-|B. Kerschbaum
+|Kerschbaum
 
-|C. Stütz
+|Stütz
 
 |===
 
