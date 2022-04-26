@@ -1,0 +1,113 @@
+= Besprechungsprotokoll dd.mm.yyyy
+firstname lastname
+1.0, yyyy-mm-dd: Some notes
+ifndef::imagesdir[:imagesdir: images]
+:icons: font
+//:sectnums:    // Nummerierung der Überschriften / section numbering
+//:toc: left
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// https://fontawesome.com/v4.7.0/icons/
+icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
+icon:github-square[link=https://github.com/htl-leonding-college/asciidoctor-docker-template] ‏ ‏ ‎
+icon:home[link=https://htl-leonding.github.io/]
+endif::backend-html5[]
+
+
+.Teilnehmer
+|===
+|anwesend |Verteiler
+
+|Vorname Nachname
+|
+
+|A. Anton (teilweise)
+|A. Anton
+
+|B. Berta
+|B. Berta
+
+|C. Cäsar
+|C. Cäsar
+
+|
+|D. Dora
+|===
+
+.Ort und Zeit
+[cols=2*]
+|===
+|Ort
+|Online-Unterricht (Discord)
+
+|von-bis
+|Mo. 20.4.2020, 2. und 3. EH
+|Dauer
+|70 min
+|===
+
+
+
+== Besprochene Themen
+
+* Thema 1
+* Thema 2
+* Thema 3
+* Thema 4 +
+Ev. mit Erläuterungen
+* Thema 5
+
+
+== Vereinbarungen und Entscheidungen
+
+.Was wurde vereinbart?
+[cols="1,8,1"]
+|===
+|wer |macht was |bis wann
+
+|
+a|
+* Bereiche: Was ist zu tun?
+** Backend (Rathberger)
+** 3D-Modell (Rathberger)
+** Dashboard (Kerschbaum)
+** Sensor-Box (Kerschbaum)
+** MQTT-Server (Rathberger)
+|
+
+|
+| Backend Endpoint Sensortypes to display
+| 3.05.2022
+
+|
+a|
+* MQTT-Security
+** Frontend Plain Text Password
+** Mobile-Client Plain Text Password
+
+git-secrets
+|
+
+|
+a|
+* Sensor-Box
+** Installieren
+** Configure
+|
+
+|
+| E-Mail Sysadmin Netzwerk
+| 3.05.2022
+
+|
+a| Produktiv-Version kontrollieren vm139
+feststellen funktionsfähig
+| 3.05.2022
+
+|
+| Presentation Sachstand Bericht
+| 3.05.2022
+
+|===
