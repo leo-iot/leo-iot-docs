@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Fragen</title>
+<title>Meeting-Protocol</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -440,73 +440,134 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Fragen</h1>
+<h1>Meeting-Protocol</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_sollen_die_messwerte_im_backend_gespeichert_werden">1. Sollen die Messwerte im Backend gespeichert werden?</a></li>
-<li><a href="#_woher_kommen_die_initialwerte_für_die_anzeige_der_räume_des_3d_modells">2. Woher kommen die Initialwerte für die Anzeige der Räume des 3D-Modells?</a></li>
-<li><a href="#_woher_kommen_die_aktuellen_werte">3. Woher kommen die aktuellen Werte?</a></li>
-<li><a href="#_wie_sollen_die_topics_des_mqtt_organisiert_werden">4. Wie sollen die Topics des MQTT organisiert werden?</a></li>
-<li><a href="#_sollen_die_messages_im_backend_gespeichert_werden">5. Sollen die Messages im Backend gespeichert werden?</a></li>
-<li><a href="#_configuration_der_sensorbox">6. Configuration der SensorBox</a></li>
-<li><a href="#_max_und_min_werte_der_sensoren">7. max- und min-Werte der Sensoren</a></li>
-<li><a href="#_sensorbox">8. SensorBox</a></li>
-<li><a href="#_ist_für_sensortype_eine_eigene_tabelle_notwendig">9. Ist für Sensortype eine eigene Tabelle notwendig?</a></li>
-<li><a href="#_wie_wird_festgestellt_dass_ein_sensor_offline_oder_online_ist">10. Wie wird festgestellt, dass ein Sensor offline oder online ist</a></li>
-<li><a href="#_wir_vereinbaren">11. Wir vereinbaren</a></li>
-<li><a href="#_ablauf">12. Ablauf</a></li>
+<li><a href="#_legend">1. Legend</a></li>
+<li><a href="#_06_12_2020">2. 06.12.2020</a></li>
+<li><a href="#_18_12_2020">3. 18.12.2020</a></li>
+<li><a href="#_27_12_2020">4. 27.12.2020</a></li>
+<li><a href="#_24_01_2021">5. 24.01.2021</a></li>
+<li><a href="#_04_02_2021">6. 04.02.2021</a>
+<ul class="sectlevel3">
+<li><a href="#_14_02_2021">6.1. 14.02.2021</a></li>
+</ul>
+</li>
+<li><a href="#_19_02_2021">7. 19.02.2021</a></li>
+<li><a href="#_21_02_2021">8. 21.02.2021</a></li>
+<li><a href="#_22_02_2021">9. 22.02.2021</a></li>
+<li><a href="#_07_03_2021">10. 07.03.2021</a></li>
+<li><a href="#_08_03_2021">11. 08.03.2021</a></li>
+<li><a href="#_19_03_2021">12. 19.03.2021</a></li>
+<li><a href="#_21_03_2021">13. 21.03.2021</a></li>
+<li><a href="#_25_03_2021">14. 25.03.2021</a></li>
+<li><a href="#_04_04_2021">15. 04.04.2021</a></li>
+<li><a href="#_07_04_2021">16. 07.04.2021</a></li>
+<li><a href="#_09_04_2021">17. 09.04.2021</a></li>
+<li><a href="#_14_04_2021">18. 14.04.2021</a></li>
+<li><a href="#_18_04_2021">19. 18.04.2021</a></li>
+<li><a href="#_25_04_2021">20. 25.04.2021</a></li>
+<li><a href="#_02_05_2021">21. 02.05.2021</a></li>
+<li><a href="#_09_05_2021">22. 09.05.2021</a></li>
+<li><a href="#_16_05_2021">23. 16.05.2021</a></li>
+<li><a href="#_21_05_2021">24. 21.05.2021</a></li>
+<li><a href="#_23_05_2021">25. 23.05.2021</a></li>
+<li><a href="#_07_06_2021">26. 07.06.2021</a></li>
+<li><a href="#_15_06_2021">27. 15.06.2021</a></li>
+<li><a href="#_20_06_2021">28. 20.06.2021</a></li>
+<li><a href="#_25_06_2021">29. 25.06.2021</a></li>
+<li><a href="#_19_09_2021">30. 19.09.2021</a></li>
+<li><a href="#_27_9_2021">31. 27.9.2021</a></li>
+<li><a href="#_30_9_2021">32. 30.9.2021</a></li>
+<li><a href="#_04_10_2021">33. 04.10.2021</a></li>
+<li><a href="#_11_10_2021">34. 11.10.2021</a></li>
+<li><a href="#_15_10_2021">35. 15.10.2021</a></li>
+<li><a href="#_22_10_2021">36. 22.10.2021</a></li>
+<li><a href="#_15_11_2021">37. 15.11.2021</a></li>
+<li><a href="#_19_11_2021">38. 19.11.2021</a></li>
+<li><a href="#_22_11_2021">39. 22.11.2021</a></li>
+<li><a href="#_29_11_2021">40. 29.11.2021</a></li>
+<li><a href="#_6_12_2021">41. 6.12.2021</a></li>
+<li><a href="#_13_12_2021">42. 13.12.2021</a></li>
+<li><a href="#_17_12_2021">43. 17.12.2021</a></li>
+<li><a href="#_10_01_2022">44. 10.01.2022</a></li>
+<li><a href="#_17_01_2022">45. 17.01.2022</a></li>
+<li><a href="#_31_01_2022">46. 31.01.2022</a></li>
+<li><a href="#_31_01_2022_2">47. 31.01.2022</a></li>
+<li><a href="#_1_02_2022">48. 1.02.2022</a></li>
+<li><a href="#_7_03_2022">49. 7.03.2022</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_sollen_die_messwerte_im_backend_gespeichert_werden"><a class="anchor" href="#_sollen_die_messwerte_im_backend_gespeichert_werden"></a>1. Sollen die Messwerte im Backend gespeichert werden?</h2>
+<h2 id="_legend"><a class="anchor" href="#_legend"></a>1. Legend</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Ja, da diese ausgewertet werden müssen.</p>
-</li>
-<li>
-<p>Frage: welche DB: zeitorientiert (Grafana) oder relational zB time-scaled based Postgres</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Grafana ist nicht geeignet, da die älteren Daten akkumuliert werden.
-Wir brauchen jedoch auch für vorherige Perioden die Detaildaten</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Influx DB normaler Standard</p>
-</li>
-<li>
-<p>Timescale Postgres DB</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_woher_kommen_die_initialwerte_für_die_anzeige_der_räume_des_3d_modells"><a class="anchor" href="#_woher_kommen_die_initialwerte_für_die_anzeige_der_räume_des_3d_modells"></a>2. Woher kommen die Initialwerte für die Anzeige der Räume des 3D-Modells?</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Bei den Sensoren ist ein retained eingestellt, dh beim ersten Zugriff auf den Mqtt Broker wird der letzte Wert angezeigt.</p>
-</li>
-</ul>
-</div>
-<div class="admonitionblock important">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ecker Quirin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EQ</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edlinger Philipp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klausner Florian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KF</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Knogler Simon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kronreif Vinzent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KV</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rieser Felix</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RF</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abazovic Edina</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bogdan Sebastian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kerschbaum Philipp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rathberger Jakob</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RJ</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stütz Thomas</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ST</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Köck Gerald</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KG</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock warning">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-important" title="Important"></i>
+<i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-Beim Timestamp ist zu beachten, dass der Zeitpunkt der Messung verwendet wird.
+Sorry for language inconsistencies. If someone has time it would be kind to translate german written protocols into english. Thank You.
 </td>
 </tr>
 </table>
@@ -514,50 +575,255 @@ Beim Timestamp ist zu beachten, dass der Zeitpunkt der Messung verwendet wird.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_woher_kommen_die_aktuellen_werte"><a class="anchor" href="#_woher_kommen_die_aktuellen_werte"></a>3. Woher kommen die aktuellen Werte?</h2>
+<h2 id="_06_12_2020"><a class="anchor" href="#_06_12_2020"></a>2. 06.12.2020</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Variante 1</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Nach öffnen des 3D-Modells / Dashboards werden noch keine Werte angezeigt.</p>
+<p>EQ, EP, KF, KS, OJ, KV, RF</p>
 </li>
 <li>
-<p>Die Werte kommen dann im Sekunden_ oder Minutentakt als MQTT- Message und das Modell wird langsam aktualisiert</p>
+<p>organizational matadded dashboard layout imagesters</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_18_12_2020"><a class="anchor" href="#_18_12_2020"></a>3. 18.12.2020</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Vorteil: Man braucht kein Backend für das 3D-Modell / Dashboard</p>
+<p>EQ, EP, KF, KS, OJ, KV, RF</p>
+</li>
+<li>
+<p>discussion with our predecessors about the project</p>
+</li>
+<li>
+<p>new division of tasks</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_27_12_2020"><a class="anchor" href="#_27_12_2020"></a>4. 27.12.2020</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, KS, KV, RF</p>
+</li>
+<li>
+<p>short briefing</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_24_01_2021"><a class="anchor" href="#_24_01_2021"></a>5. 24.01.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, KS, KV, RF</p>
+</li>
+<li>
+<p>briefing about the current situation</p>
+</li>
+<li>
+<p>discussion about occurring go problems</p>
+</li>
+<li>
+<p>restructuring of the repo</p>
+</li>
+<li>
+<p>brainstorming about a more efficient ways of operating</p>
+<div class="ulist">
+<ul>
+<li>
+<p>several work sessions a month</p>
 </li>
 </ul>
 </div>
 </li>
 </ul>
 </div>
-</li>
-<li>
-<p>Variante 3 (wird gemacht)</p>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_04_02_2021"><a class="anchor" href="#_04_02_2021"></a>6. 04.02.2021</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Die letzten Werte werden angezeigt und nach und nach aus dem Mqtt Broker aktualisiert</p>
+<p>EQ, EP, KS, KF, ST</p>
+</li>
+<li>
+<p>talked about the project management and structure</p>
+</li>
+<li>
+<p>TODO:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>getting rid off the feature branches</p>
+</li>
+<li>
+<p>creating project handbook</p>
+</li>
+<li>
+<p>linking of all sources</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_14_02_2021"><a class="anchor" href="#_14_02_2021"></a>6.1. 14.02.2021</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>EP, KV, RF</p>
+</li>
+<li>
+<p>update on current situation</p>
+</li>
+<li>
+<p>upcoming simulator problems</p>
+<div class="ulist">
+<ul>
+<li>
+<p>dicussion about solving the problem</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Variante 2</p>
+<p>talking about deadlines</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_19_02_2021"><a class="anchor" href="#_19_02_2021"></a>7. 19.02.2021</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Die aktuell gespeicherten Daten aus dem Backend werden per REST eingelesen und angezeigt</p>
+<p>EQ,EP, ST</p>
+</li>
+<li>
+<p>Write instructions for the backend in the ReadME</p>
+</li>
+<li>
+<p>the professor is looking for an alternative solution for JDBC</p>
+</li>
+<li>
+<p>create reactive branching</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_21_02_2021"><a class="anchor" href="#_21_02_2021"></a>8. 21.02.2021</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Nachteil: Das Backend muss laufend alle Daten speichen</p>
+<p>EQ, EP, KV</p>
+</li>
+<li>
+<p>status update</p>
+</li>
+<li>
+<p>assigned new tasks</p>
+</li>
+<li>
+<p>should create extra branch for the new simulator libary</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_22_02_2021"><a class="anchor" href="#_22_02_2021"></a>9. 22.02.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ,EP,ST, KG</p>
+</li>
+<li>
+<p>Notes:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>programm is available</p>
+</li>
+<li>
+<p>we need to configure the sensorbox</p>
+</li>
+<li>
+<p>the software is written in c++</p>
+</li>
+<li>
+<p>in VS we use Express IDF</p>
+</li>
+<li>
+<p>Express uses a components</p>
+</li>
+<li>
+<p>procedure:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>picking the device</p>
+</li>
+<li>
+<p>build the code (Build Flash Monitor)</p>
+</li>
+<li>
+<p>an accespoints starts</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>a http-server is running on the sensorbox</p>
+</li>
+<li>
+<p>assigning of a topic:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>configuration happens in the Main</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>How does the server new which room is currently used:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ThingName</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Our Goal:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>configuration of the sensorbox with access to the accesspoint of the school</p>
 </li>
 </ul>
 </div>
@@ -570,29 +836,176 @@ Beim Timestamp ist zu beachten, dass der Zeitpunkt der Messung verwendet wird.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_wie_sollen_die_topics_des_mqtt_organisiert_werden"><a class="anchor" href="#_wie_sollen_die_topics_des_mqtt_organisiert_werden"></a>4. Wie sollen die Topics des MQTT organisiert werden?</h2>
+<h2 id="_07_03_2021"><a class="anchor" href="#_07_03_2021"></a>10. 07.03.2021</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>RSSI</p>
+<p>EQ, EP, KV, RF</p>
+</li>
+<li>
+<p>talked about the current state and tasks</p>
+</li>
+<li>
+<p>tried to fix a connecting to mediator error</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_08_03_2021"><a class="anchor" href="#_08_03_2021"></a>11. 08.03.2021</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Ist ein besonderer Sensor misst die Wifi Feldstärke (ab kleiner -90 ist die Feldstärke bedenklich)</p>
+<p>EQ, EP. GK</p>
 </li>
 <li>
-<p>Ip Addresse wrid reportet</p>
+<p>configuration of the sensorbox</p>
 </li>
-<li>
-<p>Wifi Power beschreibt die aktuelle Leistungseinstellung am ESP-32</p>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_19_03_2021"><a class="anchor" href="#_19_03_2021"></a>12. 19.03.2021</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Reduzierte Power bei guter W-Lan versorgung</p>
+<p>EQ, EP</p>
 </li>
 <li>
-<p>Beispiel Wifi-power 11.25 dh die Leistung wurde um 11.25 db reduziert</p>
+<p>current status update</p>
+</li>
+<li>
+<p>talked about management of the project</p>
+</li>
+<li>
+<p>new Milestones / Priority</p>
+<div class="ulist">
+<ul>
+<li>
+<p>implementation of sensorboxes into room k03</p>
+</li>
+<li>
+<p>a new datamodel / whole Backend</p>
+</li>
+<li>
+<p>Frontend</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>looking for a task for the pc in the lab</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_21_03_2021"><a class="anchor" href="#_21_03_2021"></a>13. 21.03.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, KF,KV, RF</p>
+</li>
+<li>
+<p>status update</p>
+</li>
+<li>
+<p>assigned new tasks</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_25_03_2021"><a class="anchor" href="#_25_03_2021"></a>14. 25.03.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP</p>
+</li>
+<li>
+<p>get the touchscreen in lab running</p>
+</li>
+<li>
+<p>tried to solve a problem with the vm139</p>
+<div class="ulist">
+<ul>
+<li>
+<p>weren&#8217;t able to establish a connection internally</p>
+</li>
+<li>
+<p>because the local address and those in the network are the same</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_04_04_2021"><a class="anchor" href="#_04_04_2021"></a>15. 04.04.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, KF, RF</p>
+</li>
+<li>
+<p>current status update</p>
+</li>
+<li>
+<p>assigned new task</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_07_04_2021"><a class="anchor" href="#_07_04_2021"></a>16. 07.04.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP</p>
+</li>
+<li>
+<p>ask GK</p>
+<div class="ulist">
+<ul>
+<li>
+<p>get new powerstations</p>
+</li>
+<li>
+<p>need to ask for more specifications</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>lay more focus on Frontend</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Dashboard should get basic features</p>
+</li>
+<li>
+<p>3D model need to be</p>
+<div class="ulist">
+<ul>
+<li>
+<p>new animations</p>
+</li>
+<li>
+<p>update layout of the building</p>
 </li>
 </ul>
 </div>
@@ -605,226 +1018,1135 @@ Beim Timestamp ist zu beachten, dass der Zeitpunkt der Messung verwendet wird.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_sollen_die_messages_im_backend_gespeichert_werden"><a class="anchor" href="#_sollen_die_messages_im_backend_gespeichert_werden"></a>5. Sollen die Messages im Backend gespeichert werden?</h2>
+<h2 id="_09_04_2021"><a class="anchor" href="#_09_04_2021"></a>17. 09.04.2021</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Sämtliche mqtt messages werden nicht in der Datenbank gespeichert sondern mittels Logger als File (Jaeger oder Seq)</p>
+<p>EQ, EP</p>
 </li>
 <li>
-<p>Einschränkungen im Schulnetz für UDP</p>
+<p>new tasks assigned</p>
 <div class="ulist">
 <ul>
 <li>
-<p>UDP Broadcast</p>
+<p>dummy generator for 3d Model</p>
 </li>
 <li>
-<p>UDP auf einzelnen Addresse (Im gegensatz zu TCP wirde keine bidirectionale Verbindung aufgebaut)</p>
+<p>create a reworked Dashboard</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Configuration über URL</p>
+<p>created a question list</p>
+</li>
+<li>
+<p>see notes 09042021</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_configuration_der_sensorbox"><a class="anchor" href="#_configuration_der_sensorbox"></a>6. Configuration der SensorBox</h2>
+<h2 id="_14_04_2021"><a class="anchor" href="#_14_04_2021"></a>18. 14.04.2021</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Anlegen eines Textfiles mit allen url&#8217;s, derzeit config.txt</p>
+<p>EQ, EP</p>
 </li>
 <li>
-<p>zB wann wird angezeigt, dass der CO2 - Gehalt zu hoch ist.</p>
+<p>went trough the question list</p>
 </li>
 <li>
-<p>Kann konfiguriert werden:</p>
+<p>talked about on going assigned tasks</p>
+</li>
+<li>
+<p>a new datamodel was worked out</p>
+</li>
+<li>
+<p>Todos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>new Mqtt Mapper</p>
+</li>
+<li>
+<p>implement new datamodell</p>
+</li>
+<li>
+<p>update the software on all sensorboxes</p>
+</li>
+<li>
+<p>need to ask sysadmin about upd</p>
+</li>
+<li>
+<p>create a new Dashboard (rework the old one)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_18_04_2021"><a class="anchor" href="#_18_04_2021"></a>19. 18.04.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, KF, RF</p>
+</li>
+<li>
+<p>status update</p>
+</li>
+<li>
+<p>assigned new tasks</p>
+<div class="ulist">
+<ul>
+<li>
+<p>new dashboard</p>
+</li>
+<li>
+<p>seperated systemspec</p>
+</li>
+<li>
+<p>implement reworked sim prototype and api</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_25_04_2021"><a class="anchor" href="#_25_04_2021"></a>20. 25.04.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, KF, RF</p>
+</li>
+<li>
+<p>status updated</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_02_05_2021"><a class="anchor" href="#_02_05_2021"></a>21. 02.05.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, RF</p>
+</li>
+<li>
+<p>status updated</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_09_05_2021"><a class="anchor" href="#_09_05_2021"></a>22. 09.05.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, KF, RF</p>
+</li>
+<li>
+<p>status updated</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_16_05_2021"><a class="anchor" href="#_16_05_2021"></a>23. 16.05.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, KF, RF</p>
+</li>
+<li>
+<p>talked about current tasks</p>
+</li>
+<li>
+<p>assigned new tasks</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_21_05_2021"><a class="anchor" href="#_21_05_2021"></a>24. 21.05.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, ST</p>
+</li>
+<li>
+<p>talked about the current status of the project</p>
+</li>
+<li>
+<p>protocol needs to be updated</p>
+</li>
+<li>
+<p>should add issues no. to our commits</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_23_05_2021"><a class="anchor" href="#_23_05_2021"></a>25. 23.05.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP ,RF</p>
+</li>
+<li>
+<p>current status updated</p>
+</li>
+<li>
+<p>talked sensor and simulator docs</p>
+</li>
+<li>
+<p>talked about the sprint</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_07_06_2021"><a class="anchor" href="#_07_06_2021"></a>26. 07.06.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, VK ,RF</p>
+</li>
+<li>
+<p>current status</p>
+</li>
+<li>
+<p>talked about frontend tasks</p>
+</li>
+<li>
+<p>current tasks from 4AHIF group (value-sim done, tests and endpoint documentation in progress)</p>
+</li>
+<li>
+<p>EQ: currently working that data is automatically persisting</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_15_06_2021"><a class="anchor" href="#_15_06_2021"></a>27. 15.06.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ST, EQ, RF,  KV</p>
+</li>
+<li>
+<p>if a new sensor connects, he well be created atomatically &#8230;&#8203; &#8594; searching for the new one under sensor and actor&#8230;&#8203;no results -&#8594; Create new Sensor</p>
+</li>
+<li>
+<p>update gh pages and generalize it, so a new user have a quick overview</p>
+</li>
+<li>
+<p>sysmem architecture from the sys spec should also be on the gh pages</p>
+</li>
+<li>
+<p>The German Systemspec should be marked with "German"</p>
+</li>
+<li>
+<p>new deployment diagram</p>
+</li>
+<li>
+<p>"House with Students and sensorboxes whiich connecting to the mqtt</p>
+</li>
+<li>
+<p>mqtt picture also on gh pages + quick explanation</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_20_06_2021"><a class="anchor" href="#_20_06_2021"></a>28. 20.06.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, RF</p>
+</li>
+<li>
+<p>update sprint 3</p>
+</li>
+<li>
+<p>end presentation (backend/frontend/value simulator)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_25_06_2021"><a class="anchor" href="#_25_06_2021"></a>29. 25.06.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, ST</p>
+</li>
+<li>
+<p>project presentation</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_19_09_2021"><a class="anchor" href="#_19_09_2021"></a>30. 19.09.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, RF</p>
+</li>
+<li>
+<p>status update</p>
+</li>
+<li>
+<p>discussion about potential new members</p>
+</li>
+<li>
+<p>talked about if we should implement the slides to our repo</p>
+</li>
+<li>
+<p>changed the day of the week of the weekly meetings</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_27_9_2021"><a class="anchor" href="#_27_9_2021"></a>31. 27.9.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, KV</p>
+</li>
+<li>
+<p>talked about youtrack</p>
+<div class="ulist">
+<ul>
+<li>
+<p>need to update classnames</p>
+</li>
+<li>
+<p>convert github issues to youtrack</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>new tasks:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>preparation of the presentation</p>
+</li>
+<li>
+<p>addition of asciidocs slides</p>
+</li>
+<li>
+<p>update of the endpoints</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_30_9_2021"><a class="anchor" href="#_30_9_2021"></a>32. 30.9.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ , EP, KS</p>
+</li>
+<li>
+<p>decided to focus on the dashboard</p>
+</li>
+<li>
+<p>talked about the 3D-Model and the whole old frontend</p>
+</li>
+<li>
+<p>quickstart of the new web</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_04_10_2021"><a class="anchor" href="#_04_10_2021"></a>33. 04.10.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, KV, RF, BS, KP, RJ,</p>
+</li>
+<li>
+<p>first meeting with of our new project members</p>
+</li>
+<li>
+<p>introduction of the project</p>
+</li>
+<li>
+<p>setup youtrack and github repo access</p>
+</li>
+<li>
+<p>potential AI of the project</p>
+</li>
+<li>
+<p>need to make an appointment</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_11_10_2021"><a class="anchor" href="#_11_10_2021"></a>34. 11.10.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, BS, KP, RJ,ST</p>
+</li>
+<li>
+<p>canceled the upcoming meeting with ST</p>
+</li>
+<li>
+<p>talked about the tasks for the newcomer</p>
+<div class="ulist">
+<ul>
+<li>
+<p>are taking over the 3D-Model</p>
+</li>
+<li>
+<p>introduction to the whole backend</p>
+<div class="ulist">
+<ul>
+<li>
+<p>have a meeting on 15.10</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_15_10_2021"><a class="anchor" href="#_15_10_2021"></a>35. 15.10.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, EP, AE, BS, KP, RJ</p>
+</li>
+<li>
+<p>meeting with the members of the 4AHIF</p>
+</li>
+<li>
+<p>introduction to Angular</p>
+</li>
+<li>
+<p>decided to create a new 3D-Model</p>
+<div class="ulist">
+<ul>
+<li>
+<p>getting rif of the localizations</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_22_10_2021"><a class="anchor" href="#_22_10_2021"></a>36. 22.10.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>EQ, ED, KF, KS</p>
+</li>
+<li>
+<p>current tasks of  the team members</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ecker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">backend redesign</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edlinger</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">swagger-api</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klausner</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">presentation about the modules of the frontend</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Knogler</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">presentation about the modules of the frontend</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kronreif</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value-simulator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rieser</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">value-simulator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abazovic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">learning phase about angular and the 3D-Model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bogdan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">learning phase about angular and the 3D-Model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kerschbaum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">learning phase about angular and the 3D-Model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rathberger</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">learning phase about angular and the 3D-Model</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_15_11_2021"><a class="anchor" href="#_15_11_2021"></a>37. 15.11.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>AE, BS, KS, RJ, EQ</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Sprint Review</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Mocking and testing is now part of the sprint 3</p>
+</li>
+<li>
+<p>Connection over websockets can be established to the vm90</p>
+</li>
+<li>
+<p>A Quick Demo for the new 3d Model with a cube as been implemented</p>
+</li>
+<li>
+<p>An unfinished presentation of the angular modules is available</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>New Tasks</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Values Simulator Rooms should be in the database</p>
+</li>
+<li>
+<p>Value Simulator Documentation should be reworked</p>
+</li>
+<li>
+<p>Demo of the School 3d Model should be available</p>
+</li>
+<li>
+<p>New Docker Image with native quarkus executable and multi stage builds</p>
+</li>
+<li>
+<p>Complete presentation of the angular modules</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_19_11_2021"><a class="anchor" href="#_19_11_2021"></a>38. 19.11.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ST, EQ</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Fehlende Ergebnisse von dem Dashboard Team</p>
+</li>
+<li>
+<p>Ussage of swimmlanes in you track is needed</p>
+</li>
+<li>
+<p>Besprechung mit dem Dashboard Team is needed</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_22_11_2021"><a class="anchor" href="#_22_11_2021"></a>39. 22.11.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>RJ, KP, KS, KF, EQ</p>
+<div class="ulist">
+<ul>
+<li>
+<p>KP and KS have now the assignment to create the basic layout of the dashboard</p>
+</li>
+<li>
+<p>RJ and KP have advanced in the 3d Model demo. still have the assignment to complete the 3d Model Demo</p>
+</li>
+<li>
+<p>EQ has still the assignment to create the advanced docker image</p>
+</li>
+<li>
+<p>all those assignments are for the rest of the sprint</p>
+</li>
+<li>
+<p>KP and KS also need to complete the presentation</p>
+</li>
+<li>
+<p>The 3d Model team is now smaller with only RJ and KP</p>
+</li>
+<li>
+<p>RJ is switching to the backend team next week</p>
+</li>
+<li>
+<p>maybe more changes to the team in the next week</p>
+</li>
+<li>
+<p>Other team members did not attend the meeting</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Tasks will stay the same</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_29_11_2021"><a class="anchor" href="#_29_11_2021"></a>40. 29.11.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>RJ, KP, KF, EQ</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The 3d Model team is finished with the 3d model demo.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>still a bit black right now with not much light</p>
+</li>
+<li>
+<p>assignment for next sprint to make light</p>
+</li>
+<li>
+<p>assignment for next sprint to be able to hide floors</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Nothing new with the value simulator team</p>
+<div class="ulist">
+<ul>
+<li>
+<p>assignment for next sprint to get a deployment vm</p>
+</li>
+<li>
+<p>assignment for next sprint to fix bugs</p>
+</li>
+<li>
+<p>assignment for next sprint to update databse integrations</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Nothing new from the Dashboard team. No one was at the meeting</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_6_12_2021"><a class="anchor" href="#_6_12_2021"></a>41. 6.12.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>RJ, KP, RF, EQ</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The 3d Model team added light to the demo</p>
+<div class="ulist">
+<ul>
+<li>
+<p>task is to make hide option for floors</p>
+</li>
+<li>
+<p>new task is to create a presentation</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Value Simulator team is working on the deployment for new vm</p>
+<div class="ulist">
+<ul>
+<li>
+<p>new vm is acquired</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>QE is finished creating the docker image for the backend</p>
+<div class="ulist">
+<ul>
+<li>
+<p>new task create a presentation for docker containerization</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>No news from the Dashboard team</p>
+<div class="ulist">
+<ul>
+<li>
+<p>No one was at the meeting</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_13_12_2021"><a class="anchor" href="#_13_12_2021"></a>42. 13.12.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>RF, KV, RJ, KP, EQ</p>
+<div class="ulist">
+<ul>
+<li>
+<p>RJ, KP are working on the 3d Model demo</p>
+<div class="ulist">
+<ul>
+<li>
+<p>They finished the light and the feature to disable and enable different floor</p>
+</li>
+<li>
+<p>Now working on selecting different rooms and displaying the name of the room with the floor</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>RF, KV are working on deploying to the vm</p>
+<div class="ulist">
+<ul>
+<li>
+<p>deploying works now
+*+ no new plans on what they will do in the future</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>EQ worked on the Backend Docker images</p>
+<div class="ulist">
+<ul>
+<li>
+<p>still waiting to present the docker iamge presentation</p>
+</li>
+<li>
+<p>now starting to clean up the code in the backend</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_17_12_2021"><a class="anchor" href="#_17_12_2021"></a>43. 17.12.2021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>EQ, ST</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Schnell erreichbar:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Systemarchitektur (Grob und detailiert)</p>
+</li>
+<li>
+<p>Klassendiagramm</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Landingpage</p>
+</li>
+<li>
+<p>Github Repos in neue Organisation</p>
+</li>
+<li>
+<p>Räume für value simulator in eine Datenbank speichern</p>
 </li>
 </ul>
 </div>
 <div class="listingblock">
-<div class="title">derzeit</div>
 <div class="content">
-<pre>http://172.17.221.61/config?co2yellow=700
-http://172.17.221.61/config?co2red=1500</pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Einheit: ppm</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>http://172.17.221.61/config</pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>thingname=og/107,ssid=htlleonding-107-iot,mqttbroker=mqtts://10.191.112.90,mqttport=8443</pre>
+<pre>sudo apt update &amp;&amp; sudo apt dist-upgrade -y &amp;&amp; apt autoremove</pre>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_max_und_min_werte_der_sensoren"><a class="anchor" href="#_max_und_min_werte_der_sensoren"></a>7. max- und min-Werte der Sensoren</h2>
+<h2 id="_10_01_2022"><a class="anchor" href="#_10_01_2022"></a>44. 10.01.2022</h2>
 <div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Teilnehmer wurden nicht mitprotokolliert
+</td>
+</tr>
+</table>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Können derzeit über das Hauptprogramm der jeweilen Sensorbox eingestellt werden.</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="title">project leobox file main.cpp</div>
-<div class="content">
-<pre>Mhz *mhzPtr = new Mhz(CO2_RXD, CO2_TXD, EspConfig.getThingName(), "co2", "ppm", 3.0, 300, 5000);</pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Parameter</p>
-<div class="ulist">
-<ul>
-<li>
-<p>3.0 &#8230;&#8203; minimale Änderung damit reporting statt findet (wenn keine Änderungen alle 15 Minuten)</p>
+<p>keine wirklcihen Änderungen im plan</p>
 </li>
 <li>
-<p>300 &#8230;&#8203; minimaler Wert (darunter wird nichts reportet)</p>
+<p>keiner hatte was gemacht über die Weihnachtsferien</p>
 </li>
 <li>
-<p>5000 &#8230;&#8203; maximaler Wert (darüber wird nichts reportet)</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Die max- und min-Werte können nicht den einzelnen Sensortypen zugeordnet werden (zB Temperatur)
-sondern sind den einzelnen Sensoren zuzuordnen, da in verschiedenen Räumen durchaus verschiedene Temperaturbereiche sinnvoll sind</p>
-<div class="ulist">
-<ul>
-<li>
-<p>zB</p>
-<div class="ulist">
-<ul>
-<li>
-<p>in Klassenräumen eher wärmer</p>
-</li>
-<li>
-<p>in Rechenzentrum eher kühler</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>ev Default Werte in den Sensortypen</p>
+<p>Sprintende wurde auf eine woche verschoben</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_sensorbox"><a class="anchor" href="#_sensorbox"></a>8. SensorBox</h2>
+<h2 id="_17_01_2022"><a class="anchor" href="#_17_01_2022"></a>45. 17.01.2022</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>KP, RJ, EQ</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>In jeder Sensorbox ist eine kleine RuleEngine eingebaut</p>
+<p>Sprint review</p>
 </li>
 <li>
-<p>Diese schaltet zum beispiel den NeoPixel Leuchtring</p>
+<p>Planung des neuen sprintes wurde um eine woche verschoben, da wir mehr anwesende brauchen</p>
 </li>
 <li>
-<p>Dieser Leuchtring kann auch extern geschalten werden (per http request, und mqtt message). Dies kann jedoch von der eingebauten RuleEngine</p>
+<p>Schwierigkeiten beim auswählen von räumen</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Vorteil: Die SensorBox funktioniert auch ohne Netzwerk Connection</p>
+<p>Wird noch dran gearbeited</p>
 </li>
 </ul>
 </div>
 </li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_ist_für_sensortype_eine_eigene_tabelle_notwendig"><a class="anchor" href="#_ist_für_sensortype_eine_eigene_tabelle_notwendig"></a>9. Ist für Sensortype eine eigene Tabelle notwendig?</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
 <li>
-<p>values sind immer vom typen doubley</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_wie_wird_festgestellt_dass_ein_sensor_offline_oder_online_ist"><a class="anchor" href="#_wie_wird_festgestellt_dass_ein_sensor_offline_oder_online_ist"></a>10. Wie wird festgestellt, dass ein Sensor offline oder online ist</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>(DA, Seite 61 &#8594; ONLINE, boolean)</p>
+<p>Die alte repo ist noch nicht transferiert worden</p>
 </li>
 <li>
-<p>wird beim MQTT erkannt mittels Last Will</p>
+<p>CI funktioniert wieder mit den Modulen</p>
 </li>
 <li>
-<p>Issue &#8594; Last Will beim esp Projekt</p>
+<p>Documentation ist überarbeited worden</p>
+</li>
+<li>
+<p>Es wurden neue Readme erstellt</p>
+</li>
+<li>
+<p>Es wurde eine Organisations Readme erstellt</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_wir_vereinbaren"><a class="anchor" href="#_wir_vereinbaren"></a>11. Wir vereinbaren</h2>
+<h2 id="_31_01_2022"><a class="anchor" href="#_31_01_2022"></a>46. 31.01.2022</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>RJ, KP, ST</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Zunächst wir ein einfache Datenmodell erstellt, damit im 3D-Modell / Dashboard Daten angezeigt werden könnnen</p>
+<p>Projektbesprechung</p>
 </li>
 <li>
-<p>Das Dummy-Sensorwerte-Team soll für alle Räume Fake-Sensowerte generieren</p>
+<p>Vereinbart, dass beim alten Model weitergearbeitet wird</p>
 </li>
 <li>
-<p>Fragen sollen sofort in diese Dokument eingetragen werden</p>
+<p>Altes Model fixen(Animation beim Stockwerk hinzufügen)</p>
+</li>
+<li>
+<p>Code Reengineering</p>
+</li>
+<li>
+<p>Schnittstellen analysieren</p>
+</li>
+<li>
+<p>Nächste Schritte überlegen und diese vorlegen bis 1.02.2022</p>
+</li>
+<li>
+<p>HTL-Leonding 3D Projekt analysieren bis 28.02.2022
+<a href="https://github.com/htl-leonding-project/htl-leonding-3d" class="bare">https://github.com/htl-leonding-project/htl-leonding-3d</a></p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_ablauf"><a class="anchor" href="#_ablauf"></a>12. Ablauf</h2>
+<h2 id="_31_01_2022_2"><a class="anchor" href="#_31_01_2022_2"></a>47. 31.01.2022</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>RJ, KP, EQ</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Mqtt Subscriber</p>
+<p>New Sprint</p>
 </li>
 <li>
-<p>Mqtt Mapper &#8594; Aus dem Json Object der Message werden in der Datenbank die Daten eingetragen.</p>
+<p>3d Model team is fixing the struture in the frontend</p>
 </li>
 <li>
-<p>(Endpoint für letzten werte)</p>
+<p>EQ ist implementing a homepage for leo iot</p>
 </li>
 <li>
-<p>Endpoint für daten in einem einstellbaren Berreich für gewisse Sensoren</p>
+<p>EQ refactoring backend structure</p>
+</li>
+<li>
+<p>EQ implementing developement pipeline</p>
+</li>
+<li>
+<p>EQ implementing cd for the web repository</p>
+</li>
+<li>
+<p>EQ adding vcs to youtrack</p>
+</li>
+<li>
+<p>RJ fixing animations 3d model</p>
+</li>
+<li>
+<p>RJ fixing click accuracy</p>
+</li>
+<li>
+<p>RJ removing code duplication</p>
+</li>
+<li>
+<p>value simulator team meeting is tomorrow</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_02_2022"><a class="anchor" href="#_1_02_2022"></a>48. 1.02.2022</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RJ, KP, ST</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Projektbesprechung</p>
+</li>
+<li>
+<p>Was wird getan</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Fix Old Model</p>
+</li>
+<li>
+<p>Reengineer Code in web/school3d</p>
+</li>
+<li>
+<p>Analyse/Fix Displaying Data from Rooms</p>
+</li>
+<li>
+<p>Loading Screen</p>
+</li>
+<li>
+<p>Restlichen Komponenten analysieren</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>System Architecture Abbildung falsch
+<a href="https://leo-iot.github.io/leo-iot-docs/" class="bare">https://leo-iot.github.io/leo-iot-docs/</a></p>
+</li>
+<li>
+<p>Ideen:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Über MQTT nur auf gewisse clients zugreifen</p>
+</li>
+<li>
+<p>Demo mode</p>
+</li>
+<li>
+<p>Zum ansteuern des 3d models</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>KP Möglicherweise am Dashboard arbeiten</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_03_2022"><a class="anchor" href="#_7_03_2022"></a>49. 7.03.2022</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RJ, KP, ST</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Libraries fürs Dashboard:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>angular gallery</p>
+</li>
+<li>
+<p>angualr card decks</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Funktionen des Dashboards:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Räume je nach werte farblich anzeigen(Grün=alles ok, Gelb/Orange=mittelmäßig, rot=schlecht)</p>
+</li>
+<li>
+<p>Bei Click auf einen Raum sollen die Werte des Raumes angezeigt werden</p>
+</li>
+<li>
+<p>Möglicherweise Foto vom ausgewählten Raum anzeigen</p>
+</li>
+<li>
+<p>Sensorboxenübersicht (wieviele in Betrieb, ob aktiv oder passiv)</p>
+</li>
+<li>
+<p>Alarm, wenn Werte nicht passen</p>
+</li>
+<li>
+<p>Anzeige welche Räume die meisten Alarme hatten.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
