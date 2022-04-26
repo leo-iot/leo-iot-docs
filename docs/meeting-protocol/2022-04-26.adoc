@@ -1,4 +1,4 @@
-= Besprechungsprotokoll dd.mm.yyyy
+= Besprechungsprotokoll 26.04.2022
 firstname lastname
 1.0, yyyy-mm-dd: Some notes
 ifndef::imagesdir[:imagesdir: images]
@@ -6,59 +6,30 @@ ifndef::imagesdir[:imagesdir: images]
 //:sectnums:    // Nummerierung der Überschriften / section numbering
 //:toc: left
 
-//Need this blank line after ifdef, don't know why...
-ifdef::backend-html5[]
-
-// https://fontawesome.com/v4.7.0/icons/
-icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
-icon:github-square[link=https://github.com/htl-leonding-college/asciidoctor-docker-template] ‏ ‏ ‎
-icon:home[link=https://htl-leonding.github.io/]
-endif::backend-html5[]
 
 
 .Teilnehmer
 |===
-|anwesend |Verteiler
+|anwesend
 
-|Vorname Nachname
-|
 
-|A. Anton (teilweise)
-|A. Anton
+|A. Rathberger
 
-|B. Berta
-|B. Berta
+|B. Kerschbaum
 
-|C. Cäsar
-|C. Cäsar
+|C. Stütz
 
-|
-|D. Dora
 |===
 
 .Ort und Zeit
 [cols=2*]
 |===
 |Ort
-|Online-Unterricht (Discord)
+|Unterricht
 
-|von-bis
-|Mo. 20.4.2020, 2. und 3. EH
-|Dauer
-|70 min
+|Datum
+|26.4.2022
 |===
-
-
-
-== Besprochene Themen
-
-* Thema 1
-* Thema 2
-* Thema 3
-* Thema 4 +
-Ev. mit Erläuterungen
-* Thema 5
-
 
 == Vereinbarungen und Entscheidungen
 
@@ -77,11 +48,11 @@ a|
 ** MQTT-Server (Rathberger)
 |
 
-|
+| Rathberger
 | Backend Endpoint Sensortypes to display
 | 3.05.2022
 
-|
+| Rathberger
 a|
 * MQTT-Security
 ** Frontend Plain Text Password
@@ -90,23 +61,23 @@ a|
 git-secrets
 |
 
-|
+| Kerschbaum
 a|
 * Sensor-Box
 ** Installieren
 ** Configure
 |
 
-|
+| Kerschbaum
 | E-Mail Sysadmin Netzwerk
 | 3.05.2022
 
-|
+| Rathberger
 a| Produktiv-Version kontrollieren vm139
 feststellen funktionsfähig
 | 3.05.2022
 
-|
+| Kerschbaum
 | Presentation Sachstand Bericht
 | 3.05.2022
 
