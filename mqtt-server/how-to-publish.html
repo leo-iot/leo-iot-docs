@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Documentation Structure</title>
+<title>MQTT-Server Topics</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -440,54 +440,125 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Documentation Structure</h1>
+<h1>MQTT-Server Topics</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_folder_structure">1. Folder Structure</a></li>
+<li><a href="#_floor">1. Floor</a></li>
+<li><a href="#_room">2. Room</a></li>
+<li><a href="#_sensortype">3. Sensortype</a></li>
+<li><a href="#_state">4. state</a></li>
+<li><a href="#_example">5. Example</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_folder_structure"><a class="anchor" href="#_folder_structure"></a>1. Folder Structure</h2>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><span class="image"><img src="../images/docs-structure.png" alt="docs structure"></span></p>
+<p>Path:</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="listingblock">
+<div class="content">
+<pre>&lt;Floor&gt;/&lt;Room&gt;/&lt;Sensortype&gt;/state</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_floor"><a class="anchor" href="#_floor"></a>1. Floor</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
 <li>
-<p>General Documentation for the leo-iot Application.</p>
+<p>ug</p>
 </li>
 <li>
-<p>Images for the documentation link them like this (<code>image:&lt;image-out-of-images-dir&gt;[]</code>).</p>
+<p>eg</p>
 </li>
 <li>
-<p>Everything related to the sensor box named Leo Box.</p>
+<p>og</p>
 </li>
 <li>
-<p>Everything related the backend of the leo iot application.</p>
+<p>og2</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_room"><a class="anchor" href="#_room"></a>2. Room</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Room name must be lowercase and need to match the name in the 3d Model!</p>
+</div>
+<div class="paragraph">
+<p><a href="http://vm139.htl-leonding.ac.at/3d" class="bare">vm139.htl-leonding.ac.at/3d</a></p>
+</div>
+<div class="paragraph">
+<p>For example this Room would be 134_1</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../images/MQTTRoomExample.png" alt="MQTTRoomExample" width="800px"></span></p>
+</div>
+<div class="paragraph">
+<p>Please also note that the Model is not up-to-date
+(e.g. E59a and E59b are still E59)
+and some rooms are not clickable
+(especially in the bottom floor),
+thus it won&#8217;t display values for those!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sensortype"><a class="anchor" href="#_sensortype"></a>3. Sensortype</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>e.g.:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>volume</p>
 </li>
 <li>
-<p>Everything related to the web module (this includes the 3d Model and the Dashboard).</p>
+<p>temperature</p>
 </li>
 <li>
-<p>Meeting protocol. The index file in this directory includes the documentation of every meeting.</p>
+<p>co2</p>
 </li>
 <li>
-<p>Every file in this directory is not linked anywhere in the documentation</p>
+<p>humidity</p>
 </li>
-<li>
-<p>Project documents like the system specification are located here</p>
-</li>
-<li>
-<p>Slides for project presentation. Every file in there will be converted in a reveal js slides document.</p>
-</li>
-<li>
-<p>Everything related to the value simulator is documented here</p>
-</li>
-</ol>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_state"><a class="anchor" href="#_state"></a>4. state</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>{
+    "value": &lt;value&gt;,
+    "timestamp": &lt;timestamp&gt;
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example"><a class="anchor" href="#_example"></a>5. Example</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>og/107/temperature/state
+
+{
+    "value":19.80,
+    "timestamp":1647592471
+}</pre>
+</div>
 </div>
 </div>
 </div>
