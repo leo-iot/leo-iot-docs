@@ -40,6 +40,10 @@ For information about related project click one of the related projects below. T
 - link:value-simulator/valueSimulator-Documention[Value Simulator Docu]
 - link:leo-box/index[Leo Box]
 
+=== MQTT-Server
+
+- link:mqtt-server/how-to-publish.adoc[MQTT-Server Topics]
+
 == Project Documents
 
 Official Project documents.

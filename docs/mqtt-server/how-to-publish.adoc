@@ -1,0 +1,62 @@
+= MQTT-Server Topics
+ifndef::imagesdir[:imagesdir: ../images]
+:hide-uri-scheme:
+
+Path:
+
+----
+<Floor>/<Room>/<Sensortype>/state
+----
+
+== Floor
+* ug
+* eg
+* og
+* og2
+
+== Room
+
+Room name must be lowercase and need to match the name in the 3d Model!
+
+
+http://vm139.htl-leonding.ac.at/3d
+
+For example this Room would be 134_1
+
+
+image:MQTTRoomExample.png[width=800px]
+
+Please also note that the Model is not up-to-date
+(e.g. E59a and E59b are still E59)
+and some rooms are not clickable
+(especially in the bottom floor),
+thus it won't display values for those!
+
+
+== Sensortype
+
+e.g.:
+
+* volume
+* temperature
+* co2
+* humidity
+
+== state
+----
+{
+    "value": <value>,
+    "timestamp": <timestamp>
+}
+----
+
+== Example
+
+----
+og/107/temperature/state
+
+{
+    "value":19.80,
+    "timestamp":1647592471
+}
+----
