@@ -42,7 +42,7 @@ For information about related project click one of the related projects below. T
 
 === MQTT-Server
 
-- link:mqtt-server/how-to-publish[MQTT-Server Topics]
+- link:mqtt-server/mqtt-server-topics[MQTT-Server Topics]
 
 == Project Documents
 
