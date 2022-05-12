@@ -1,0 +1,41 @@
+= Besprechungsprotokoll 2022-05-12
+ifndef::imagesdir[:imagesdir: images]
+:icons: font
+//:sectnums:    // Nummerierung der Überschriften / section numbering
+//:toc: left
+
+
+.Teilnehmer
+|===
+|Anwesend
+
+
+|Rathberger
+
+|Kerschbaum
+
+|Stütz
+
+|Köck
+
+|Schraml
+
+|Oswald
+
+|===
+
+.Ort und Zeit
+[cols=2*]
+|===
+|Ort
+|Schule
+
+|Datum
+|2022-05-12
+|===
+
+== Vereinbarungen und Entscheidungen
+
+Admin-Tool in späterer Version
+
+* z.B. änderung von Grenzwerten bei Sensorboxen (konfigurierbar über http)
