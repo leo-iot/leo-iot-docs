@@ -1,0 +1,45 @@
+= Besprechungsprotokoll 21.06.2022
+ifndef::imagesdir[:imagesdir: ../images]
+:icons: font
+//:sectnums:    // Nummerierung der Überschriften / section numbering
+//:toc: left
+
+
+
+.Teilnehmer
+|===
+|Anwesend
+
+
+|Rathberger
+
+|Kerschbaum
+
+|Stütz
+
+|Bucek
+
+|===
+
+.Ort und Zeit
+[cols=2*]
+|===
+|Ort
+|Unterricht
+
+|Datum
+|21.6.2022
+|===
+
+== Vereinbarungen und Entscheidungen
+
+.Was wurde vereinbart?
+[cols="1,8,1"]
+|===
+|wer |macht was |bis wann
+
+
+| Philipp Kerschbaum
+a| * Dashboardkonzept entwerfen/zeichnen
+* Simple Implementierung vom Dashboard mit einem funktionierendem Feature
+| 27.06.2022
