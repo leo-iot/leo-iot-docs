@@ -1,8 +1,14 @@
+[.title-slide]
 = Leo IOT
+:customcss: custom-base.css
 ifndef::imagesdir[:imagesdir: ../images]
-:customcss: css/style.css
 
+image:logo_with_background.png[logo, 80%]
+
+[background-image=bad-air.png]
 == Situation
+
+
 
 [%step]
 * Schlechte Luftqualität
@@ -17,7 +23,6 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Leo Box
 
-[.columns.is-vcentered]
 === Was misst die Leo Box
 
 [.column]
@@ -32,7 +37,6 @@ ifndef::imagesdir[:imagesdir: ../images]
 * Drucksensor
 --
 
-[.column]
 --
 image::sensor_box.png[]
 --
@@ -53,7 +57,6 @@ image:system_architecture_v2.png[architecture, 700]
 
 == Grafische Darstellung
 
-[.columns.is-vcentered]
 === Dashboard
 
 [.column]
@@ -64,15 +67,12 @@ image:system_architecture_v2.png[architecture, 700]
 //* Voraussehung der Daten mithilfe von künstlicher Intelligent
 --
 
-[.column]
 --
 image:dashboard_old_screenshot.png[]
 --
 
-[.columns.is-vcentered]
 === 3d Modell
 
-[.column]
 --
 * 3d Modell der Schule
 * Auswählen der Etagen
@@ -81,7 +81,6 @@ image:dashboard_old_screenshot.png[]
 * Schneller Überblick mittels Farben
 --
 
-[.column]
 --
 image:3d_model_old_screenshot.png[]
 --
