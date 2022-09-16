@@ -1,0 +1,52 @@
+= LEO IOT
+
+Projekt HTL Leonding, Internet of Things (mehrere Gnerationen)
+
+
+== Situation
+
+man kennts -> mehrer stundend in der schule ->
+stickige luft -> schlechtere konzentartion, etc. ->
+keiner denkt dran die fenster aufzumachen
+
+== Wie lösen wir so ein Problem
+
+Sensorboxen in jedem Raum
+
+Warnung (z.B. Ampel) fürs Lüften
+
+== LEO BOX
+
+Co2, Luftfäuchtigkeit, Temperatur, ...
+
+Elektronik Abteilung (Werkstätte)
+
+== System Architektur
+
+* Sensor Boxen (Von uns)
+* MQTT Broker (Mosquitto)
+* Backend (Quarkus, Optimiert für Cloud/Containerizing)
+* TimescaleDB (bassiert auf Postgres, für viele Daten (IOT))
+* Frontend (Angular)
+* Revers Proxy (Traefik (GO))
+
+== Grafische Dastellung
+
+Daten sind nutzlos ohne Darstellung -> Dashboard
+
+== Dashboard
+
+// TODO
+
+== 3D Modell
+
+Live Demo
+
+== Ziele
+
+Zuerst Regel basiert
+z.B. Temperatur sinkt (Fenster offen)
+
+Funkioniert jedoch nur wenns draußen Kälter ist (Winter)
+
+Deswegen AI bassiert das ganze auswerten
