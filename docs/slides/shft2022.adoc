@@ -57,7 +57,7 @@ image:system_architecture_v2.png[architecture, 700]
 [background-image=ki.png]
 == Ziele
 
-* Regel bassierte auswertung der gesammelten Daten
-* AI bassierte auswetung der gesammelten Daten
+* Regel basierte Auswertung
+* AI basierte Auswertung
 
 
