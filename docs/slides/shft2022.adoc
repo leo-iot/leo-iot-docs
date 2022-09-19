@@ -31,18 +31,15 @@ image:system_architecture_v2.png[architecture, 700]
 [background-image=dashboard-car.jpeg]
 == Grafische Darstellung
 
+[background-image=dashboard.jpeg]
 === Dashboard
 
 [.column]
 --
-* Ansicht von allen ebenen in dem Schulgebäude
-* Leichtes Abrufen von den Sensordaten
+//* Ansicht von allen Ebenen in dem Schulgebäude
+//* Leichtes Abrufen von den Sensordaten
 //* Daten in Graphen dargestellt
 //* Voraussehung der Daten mithilfe von künstlicher Intelligent
---
-
---
-image:dashboard_old_screenshot.png[]
 --
 
 [background-image=3d_model_old_screenshot.png]

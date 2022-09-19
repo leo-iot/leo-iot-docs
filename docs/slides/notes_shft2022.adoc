@@ -36,7 +36,10 @@ Daten sind nutzlos ohne Darstellung -> Dashboard
 
 == Dashboard
 
-// TODO
+* Live Demo
+* Zukunft
+** Graphen
+** Warnungen (Derzeit dummy data)
 
 == 3D Modell
 
