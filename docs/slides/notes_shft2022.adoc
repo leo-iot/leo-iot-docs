@@ -5,8 +5,8 @@ Projekt HTL Leonding, Internet of Things (mehrere Gnerationen)
 
 == Situation
 
-man kennts -> mehrer stundend in der schule ->
-stickige luft -> schlechtere konzentartion, etc. ->
+man kennts -> mehrere Stunden in der Schule ->
+schlechte luft -> mangelnde Konzentration, etc. ->
 keiner denkt dran die fenster aufzumachen
 
 == Wie lösen wir so ein Problem
@@ -21,6 +21,27 @@ Co2, Luftfäuchtigkeit, Temperatur, ...
 
 Elektronik Abteilung (Werkstätte)
 
+Schwellenwerte werden auf da Box over the air configuriert
+
+Standalone -> Bauen Backend + Frontend
+
+== Grafische Dastellung
+
+Daten sind nutzlos ohne Darstellung -> Dashboard
+
+
+== 3D Modell
+
+Live Demo
+
+== Dashboard
+
+* Live Demo
+* Zukunft
+** Grafana
+** Graphen
+** Warnungen (Derzeit dummy data)
+
 == System Architektur
 
 * Sensor Boxen (Von uns)
@@ -29,21 +50,6 @@ Elektronik Abteilung (Werkstätte)
 * TimescaleDB (bassiert auf Postgres, für viele Daten (IOT))
 * Frontend (Angular)
 * Revers Proxy (Traefik (GO))
-
-== Grafische Dastellung
-
-Daten sind nutzlos ohne Darstellung -> Dashboard
-
-== Dashboard
-
-* Live Demo
-* Zukunft
-** Graphen
-** Warnungen (Derzeit dummy data)
-
-== 3D Modell
-
-Live Demo
 
 == Ziele
 
