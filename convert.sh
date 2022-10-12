@@ -14,5 +14,5 @@ docker run \
     -v $PWD/:/app \
     -e INPUT_SLIDES=$convertSlides \
     -e INPUT_INPUTPATH=$inputDir \
-    -e INPUT_OUTPUTPATH=$outputDir \
+    -e INPUT_OUTPUTPATH=$outputDir --rm \
      quirinecker/asciidoctor-convert

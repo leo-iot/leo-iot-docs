@@ -5,44 +5,30 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 image:logo_with_background.png[logo, 80%]
 
-[background-image=bad-air.png]
+[.lightbg,background-opacity="0.7",background-video=tired-students.mp4,background-video-loop="true"]
 == Situation
 
 
 
-[%step]
-* Schlechte Luftqualität
-* Schlechte Konzentration
-* Weniger Spaß in der Schule
+--
+* Lange Schultage
+* Schlechte Luft
+* Mangelnde Konzentration
+--
 
-[background-image=leobox.png]
-== Wie lösen wir so ein problem
+[.lightbg,background-opacity="0.7",background-image=leo-box-02.jpeg]
+== Wie lösen wir so ein problem?
 
 * Luftqualität messen mittels Sensorboxen
-* Warnungen bei schlechten Werten mittels einem Dashboard
+* Warnungen bei schlechten Werten mittels einer Ampel
 
-[background-image=leobox.png]
+[.lightbg,background-opacity="0.7",background-image=leo-box-01.jpeg]
 == Leo Box
 
-== System Architektur
-
-image:system_architecture_v2.png[architecture, 700]
-
-[background-image=dashboard-car.jpeg]
+[.lightbg,background-opacity="0.7",background-image=dashboard-car.jpeg]
 == Grafische Darstellung
 
-[background-image=dashboard.jpeg]
-=== Dashboard
-
-[.column]
---
-//* Ansicht von allen Ebenen in dem Schulgebäude
-//* Leichtes Abrufen von den Sensordaten
-//* Daten in Graphen dargestellt
-//* Voraussehung der Daten mithilfe von künstlicher Intelligent
---
-
-[background-image=3d_model_old_screenshot.png]
+[.lightbg,background-opacity="0.7",background-image=3d_model_old_screenshot.png]
 === 3d Modell
 
 --
@@ -54,7 +40,22 @@ image:system_architecture_v2.png[architecture, 700]
 --
 --
 
-[background-image=ki.png]
+[.lightbg,background-opacity="0.7",background-image=grafana_logo.png,background-size="contain",background-position="auto -50px"]
+=== Dashboard
+
+[.column]
+--
+//* Ansicht von allen Ebenen in dem Schulgebäude
+//* Leichtes Abrufen von den Sensordaten
+//* Daten in Graphen dargestellt
+//* Voraussehung der Daten mithilfe von künstlicher Intelligent
+--
+
+== System Architektur
+
+image:system_architecture_v2.png[architecture, 700]
+
+[.lightbg,background-opacity="0.7",background-image=ki.png]
 == Ziele
 
 * Regel basierte Auswertung
