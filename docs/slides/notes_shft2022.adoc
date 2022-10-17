@@ -35,6 +35,7 @@ Notes:
 * Demo
 * Zuerst 3D Model mit Farben
 * Einhauchen und herzagen das Rot wird
+* Dashboard wird grod überarbeitet bzw neu gmocht in grafana
 
 == System Architektur
 
