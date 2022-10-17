@@ -1,6 +1,8 @@
 = LEO IOT
 
-Projekt HTL Leonding, Internet of Things (mehrere Gnerationen)
+* Grüßgot
+* Wir (Moritz und Paul aus da 4bhitm, Jakob aus da 5ahif) san des derzeitige team von leo-iot
+* Projekt HTL Leonding, Internet of Things (mehrere Gnerationen)
 
 
 == Situation
@@ -11,36 +13,28 @@ keiner denkt dran die fenster aufzumachen
 
 == Wie lösen wir so ein Problem
 
-Sensorboxen in jedem Raum
+* Sensorboxen in jedem Raum
 
-Warnung (z.B. Ampel) fürs Lüften
+* Warnung (z.B. Ampel) fürs Lüften
 
 == LEO BOX
 
-Co2, Luftfäuchtigkeit, Temperatur, ...
+* Co2, Luftfäuchtigkeit, Temperatur, ...
+* Cooperationsprojekt von (Informatik und Medientechnick)
+* Hardwer stellt die Werkstätte zur verfügung
+* Zu den Boxen kum i speda numoi
 
-Elektronik Abteilung (Werkstätte)
+Notes:
 
-Schwellenwerte werden auf da Box over the air configuriert
+* Schwellenwerte werden auf da Box over the air configuriert
 
-Standalone -> Bauen Backend + Frontend
 
 == Grafische Dastellung
 
-Daten sind nutzlos ohne Darstellung -> Dashboard
-
-
-== 3D Modell
-
-Live Demo
-
-== Dashboard
-
-* Live Demo
-* Zukunft
-** Grafana
-** Graphen
-** Warnungen (Derzeit dummy data)
+* Standalone -> Bauen Backend + Frontend
+* Demo
+* Zuerst 3D Model mit Farben
+* Einhauchen und herzagen das Rot wird
 
 == System Architektur
 
@@ -51,6 +45,7 @@ Live Demo
 * Frontend (Angular)
 * Revers Proxy (Traefik (GO))
 
+////
 == Ziele
 
 Zuerst Regel basiert
@@ -59,3 +54,4 @@ z.B. Temperatur sinkt (Fenster offen)
 Funkioniert jedoch nur wenns draußen Kälter ist (Winter)
 
 Deswegen AI bassiert das ganze auswerten
+////
