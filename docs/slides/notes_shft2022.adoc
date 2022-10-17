@@ -19,9 +19,9 @@ keiner denkt dran die fenster aufzumachen
 
 == LEO BOX
 
-* Co2, Luftfäuchtigkeit, Temperatur, ...
 * Cooperationsprojekt von (Informatik und Medientechnick)
 * Hardwer stellt die Werkstätte zur verfügung
+* Co2, Luftfäuchtigkeit, Temperatur, ...
 * Zu den Boxen kum i speda numoi
 
 Notes:
