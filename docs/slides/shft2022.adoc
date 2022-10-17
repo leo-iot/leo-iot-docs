@@ -25,6 +25,8 @@ image:logo_with_background.png[logo, 80%]
 [.lightbg,background-opacity="0.7",background-image=leo-box-01.jpeg]
 == Leo Box
 
+
+////
 [.lightbg,background-opacity="0.7",background-image=dashboard-car.jpeg]
 == Grafische Darstellung
 
@@ -50,15 +52,21 @@ image:logo_with_background.png[logo, 80%]
 //* Daten in Graphen dargestellt
 //* Voraussehung der Daten mithilfe von künstlicher Intelligent
 --
+////
+
 
 == System Architektur
 
 image:system_architecture_v2.png[architecture, 700]
 
+
+////
 [.lightbg,background-opacity="0.7",background-image=ki.png]
 == Ziele
 
 * Regel basierte Auswertung
 * AI basierte Auswertung
+////
+
 
 
