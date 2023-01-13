@@ -5,6 +5,10 @@ ifndef::imagesdir[:imagesdir: images]
 
 image:system_architecture_new.png[width=800px]
 
+== System Architecture
+
+image:architecture/leo-iot.png[]
+
 
 == Meeting Protocol
 
