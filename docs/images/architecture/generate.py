@@ -39,4 +39,6 @@ with Diagram("LEO-IOT", show=False, direction='TB'):
 
     leo_sim >> Edge(label="sends fake sensor data") >> mosquitto
 
+    graphana << Edge(label="retrieves sensor data") << timescale
+
 
