@@ -1,0 +1,34 @@
+= Value Simulator REST API Docs
+
+== Config
+
+[]
+----
+# Disable / Enable the sending of values
+POST {{url}}/api/config
+Content-Type: application/json
+
+{
+  "sendValues": false
+}
+----
+
+== Room
+
+----
+# Can be any of GET, POST, DELETE, PUT to manage the rooms
+{{url}}/api/room
+----
+
+== Value Types
+
+----
+# Can be any of GET, POST, DELETE, PUT to manage the value types
+{{url}}/api/valueType
+----
+
+
+== More Endpoints
+
+Look at the https://github.com/leo-iot/value-simulator[request.http] file in the value sim repo.
+
