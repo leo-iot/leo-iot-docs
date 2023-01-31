@@ -42,6 +42,7 @@ For information about related project click one of the related projects below. T
 
 - link:value-simulator/index[Value Simulator System Specification]
 - link:value-simulator/valueSimulator-Documention[Value Simulator Docu]
+- link:value-simulator/valueSimRestAPI[Value Simulator Rest API]
 - link:leo-box/index[Leo Box]
 
 === MQTT-Server
