@@ -1,5 +1,7 @@
 = Value Simulator REST API Docs
 
+Some examples can be found here: https://github.com/leo-iot/value-simulator/blob/main/requests.http[request.http]
+
 == Config
 
 []
@@ -30,5 +32,5 @@ Content-Type: application/json
 
 == More Endpoints
 
-Look at the https://github.com/leo-iot/value-simulator[request.http] file in the value sim repo.
+Look at the https://github.com/leo-iot/value-simulator/blob/main/requests.http[request.http] file in the value sim repo.
 
