@@ -56,3 +56,6 @@ Official Project documents.
 * link:project-documents/System-Specification[System Specification]
 * link:project-documents/Proposal[Proposal]
 
+== Documentation
+
+* link:leo-iot-web/setting-up-box-and-adding-rooms.adoc[Configuring box and Handeling 3D-Model]
