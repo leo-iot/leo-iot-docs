@@ -4,9 +4,9 @@ Paul Horner
 :toc: left
 :sectnums:
 
-== Leobox für gewissen Raum zuweisen
+== Leobox auf bestimmten Raum zuweisen
 
-=== Sensorbox in WLAN konfigurieren
+=== Sensorbox konfigurieren
 
 * Sensorbox öffnet einen Accesspoint EPS-32
 wenn sie sich mit keinem Netzwerk verbinden kann.
@@ -39,7 +39,7 @@ wenn sie sich mit keinem Netzwerk verbinden kann.
 link:https://drive.google.com/file/d/1lFtku4dFRcFErO_S5FD6Z4YTc96Rxv16/view[Weitere Dokumentation]
 
 
-== Zugriff auf 3D-Modell in Angular
+== Zugriff auf 3D-Modell/Räume in Angular
 
 === Zugriff auf .obj Datei in Angular
 
@@ -94,7 +94,7 @@ secondfloor, firstfloor) beginnt.
 
 image::../images/3D-Modell-Raum-Bezeichnung.png[]
 
-== Neue räume 3D Modell hinnzufügen
+== Neue räume 3D Modell hinzufügen
 
 * Bearbeitung im 3D-Modell durchführen
 * Raum Objekte nach Naming-Convention benennen
