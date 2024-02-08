@@ -59,3 +59,5 @@ Official Project documents.
 == Documentation
 
 * link:leo-iot-web/setting-up-box-and-adding-rooms[Configuring box and Handeling 3D-Model]
+
+* link:leo-iot-web/deployment.adoc[Deployment]

@@ -1,0 +1,142 @@
+= Dokumentation des Deployments zu vm08.htl-leonding.ac.at
+1.0.0, 2024-02-08:
+ifndef::imagesdir[:imagesdir: ../images]
+:toc: left
+:sectnums:
+
+== Mit der vm08 verbinden und ein Schlüsselpaar erstellen
+-----
+ssh lsadmin@vm08.htl-leonding.ac.at
+
+ssh-keygen -t rsa
+-----
+
+== Den generierten privaten Schlüssel, den Benutzer, die URL und das Passwort in die GitHub-Secrets eintragen
+
+image:gh-secret1.png[]
+
+IMPORTANT: Die URL ohne @ eintragen (vm08.htl-leonding.ac.at)
+
+== GitHub Action
+
+.Configure klicken
+image:gh-action1.png[]
+
+=== Erklärung .yml File
+.build-and-push.yml
+[source, yaml]
+-----
+name: Build and Push
+
+on:
+  push:
+    branches: [ "release" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository <.>
+        uses: actions/checkout@v3
+
+      - name: Login to GHCR <.>
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN  }}
+
+      - name: Build and push images <.>
+        run: |
+          docker build -t ghcr.io/leo-iot/leo-iot-web/webapp:latest .
+          docker image ls
+          docker push ghcr.io/leo-iot/leo-iot-web/webapp
+-----
+
+<.> Ohne den Checkout-Schritt hätten nachfolgende Schritte in dem Workflow keinen Zugriff auf die Codebasis, und man könnte keine Aktionen wie das Bauen, Testen oder Deployen der Anwendung durchführen.
+
+<.> Dieser Anmeldeschritt ist notwendig, bevor Docker-Images in GHCR hochgeladen werden, um sicherzustellen, dass der Workflow über die erforderlichen Anmeldedaten verfügt.
+
+<.> Baut ein Docker-Image aus dem angegebenen Dockerfile, taggt es mit der neuesten Version und lädt es in ein Docker-Registry hoch.
+
+=== Änderungen commiten
+
+image:gh-action2.png[]
+
+=== Workflow started automatisch
+
+image:gh-action3.png[]
+
+=== Release branch mit main branch mergen
+
+image:gh-pull-request1.png[]
+
+== Cronjob auf der vm08
+
+*Definiton*: Ein Cronjob ist eine geplante Aufgabe, die regelmäßig zu bestimmten Zeitpunkten oder in festgelegten Intervallen automatisch ausgeführt wird.
+
+.docker-cronjob.sh erstellen
+[source, shell]
+-----
+#!/bin/bash
+
+# Wechsle zum Verzeichnis, in dem sich die docker-compose-Datei befindet
+cd /opt/docker/leo-iot
+
+# Stoppe laufende Container
+docker-compose down
+
+# Starte Container neu
+docker-compose up -d
+
+-----
+
+=== Rechte fürs Ausführen vergeben
+
+-----
+chmod +x ~/docker_cronjob.sh
+-----
+
+=== Cronjob konfigurieren
+
+-----
+crontab -e
+-----
+
+-----
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+0 2 * * * /home/lsadmin/docker_cronjob.sh <.>
+-----
+
+<.> Das .sh-File wird nun jeden Tag um 2 Uhr in der Früh ausgeführt
+
+=== Manuel updaten
+
+.auf der VM
+-----
+./docker_cronjob.sh
+-----
