@@ -1,0 +1,40 @@
+= Box für bestimmten Raum Konfigurieren und Neue Räume hinnzufügen
+Paul Horner
+1.0.0, 2020-01-29:
+:toc: left
+:sectnums:
+
+== Leobox für gewissen Raum zuweisen
+
+== 3D-Modell
+
+=== Wie sind Räume Definiert
+=== Raum zuweisung in Angular-Client
+==== Klasse: Loader
+
+
+
+* `modelName`: Der Name des zu ladenden Modells.
+* `scene`: Die Szene, in die das Modell geladen wird.
+* `objects`: Ein Array, das alle Objekte in der Szene speichert.
+* `objectArr`: Ein Array, das alle Children des geladenen Objekts speichert.
+* `floors`: Ein Array, das die Namen aller Bodenobjekte speichert.
+* `finishLoadingCallback`: Eine Callback-Funktion, die aufgerufen wird, wenn das Laden abgeschlossen ist.
+* `floorObject`: Ein Array, das alle Bodenobjekte speichert.
+
+==== Laden der Assets und des Models
+
+Diese Methode lädt die Materialien (`.mtl`) und das Modell (`.obj`) mit Hilfe des `MTLLoader` und `OBJLoader`.
+Nach dem Laden des Modells wird es zur Szene hinzugefügt und seine Kinder werden zum `objectArr` hinzugefügt.
+Schließlich werden alle Kinder der Szene zum `objects` Array hinzugefügt.
+
+==== Methode: generateLoadingManager
+
+In der `onLoad`-Funktion des `LoadingManager`:
+
+* `roomObject`: Dieses Array wird gefiltert, um nur die Elemente zu behalten, deren Name mit 'U', '1', '2' oder 'E' beginnt.
+Dies könnte eine Konvention sein, um Räume in den Modellnamen zu kennzeichnen.
+* `floorObject`: Dieses Array wird gefiltert, um nur die Elemente zu behalten, deren Name mit 'c', 's', 'f' oder 'g' (cealing,
+secondfloor, firstfloor) beginnt.
+
+** *Im 3d-Modell sind die Stockwerk-Objekte genau so gekennzeichnet/bennant*
