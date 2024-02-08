@@ -34,6 +34,11 @@ In der `onLoad`-Funktion des `LoadingManager`:
 
 * `roomObject`: Dieses Array wird gefiltert, um nur die Elemente zu behalten, deren Name mit 'U', '1', '2' oder 'E' beginnt.
 Dies könnte eine Konvention sein, um Räume in den Modellnamen zu kennzeichnen.
+
+** *Im 3d-Modell sind die Raum-Objekte genau so gekennzeichnet/bennant*
+
+
+
 * `floorObject`: Dieses Array wird gefiltert, um nur die Elemente zu behalten, deren Name mit 'c', 's', 'f' oder 'g' (cealing,
 secondfloor, firstfloor) beginnt.
 
