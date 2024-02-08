@@ -6,7 +6,52 @@ Paul Horner
 
 == Leobox für gewissen Raum zuweisen
 
-== 3D-Modell
+=== Sensorbox in WLAN konfigurieren
+
+* Sensorbox öffnet einen Accesspoint EPS-32
+wenn sie sich mit keinem Netzwerk verbinden kann.
+
+* Mit Accsess Point verbinden
+
+* Sensorbox wartet unter http://192.168.4.1
+
+* WLAN-Credentials eingeben
+
+** http://192.168.4.1/config
+
+** http://192.168.4.1/config?thingname=eg/e74
+*** floor/roomnumber
+
+** http://192.168.4.1/config?ssid=????
+
+** http://192.168.4.1/config?password=???
+
+* Mqtt mit Authentication und Verschlüsselung
+
+** http://192.168.4.1/config?mqttbroker=mqtts://leobw.synology.me
+
+** http://192.168.4.1/config?mqttuser=????
+
+** http://192.168.4.1/config?mqttpassword=????
+
+** http://192.168.4.1/config?mqttport=8883
+
+link:https://drive.google.com/file/d/1lFtku4dFRcFErO_S5FD6Z4YTc96Rxv16/view[Weitere Dokumentation]
+
+
+== Zugriff auf 3D-Modell in Angular
+
+=== Zugriff auf .obj Datei in Angular
+
+
+==== Schritte:
+
+* Nutzen von `three.js`-Bibliothek in Ihrem Angular-Projekt.
+* Verwenden Sie den `OBJLoader` von `three.js`, um die `.obj`-Datei zu laden.
+* Für Interaktionen mit dem Modell (wie das Klicken oder Ziehen des Modells) können Sie `THREE.Raycaster` verwenden.
+
+link:https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene[Three.js]
+
 
 === Wie sind Räume Definiert
 === Raum zuweisung in Angular-Client
@@ -37,9 +82,29 @@ Dies könnte eine Konvention sein, um Räume in den Modellnamen zu kennzeichnen.
 
 ** *Im 3d-Modell sind die Raum-Objekte genau so gekennzeichnet/bennant*
 
+image::../images/3D-Modell-Stockwerk-Bezeichnung.png[]
+
 
 
 * `floorObject`: Dieses Array wird gefiltert, um nur die Elemente zu behalten, deren Name mit 'c', 's', 'f' oder 'g' (cealing,
 secondfloor, firstfloor) beginnt.
 
+
 ** *Im 3d-Modell sind die Stockwerk-Objekte genau so gekennzeichnet/bennant*
+
+image::../images/3D-Modell-Raum-Bezeichnung.png[]
+
+== Neue räume 3D Modell hinnzufügen
+
+* Bearbeitung im 3D-Modell durchführen
+* Raum Objekte nach Naming-Convention benennen
+** BSP (E73, 111, 232)
+
+image::../images/Room-With-Model-next-to-it.png[]
+
+* Exportireren in `.obj` Datei
+
+image::../images/How-to-export-obj-in-c4d.png[]
+
+* Datei in Assets ordner Kopieren
+** Wenn nötig weitere änderungen im Angular-Code vornehmen
