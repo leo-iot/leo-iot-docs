@@ -60,3 +60,11 @@ og/107/temperature/state
     "timestamp":1647592471
 }
 ----
+
+== How to change MQTT Server in leo-iot-web
+
+.environment.ts
+image:change-mqtt1.png[]
+
+.core-module.ts
+image:change-mqtt2.png[]
