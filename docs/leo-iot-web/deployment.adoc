@@ -1,4 +1,5 @@
 = Dokumentation des Deployments zu vm08.htl-leonding.ac.at
+Moritz Eder
 1.0.0, 2024-02-08:
 ifndef::imagesdir[:imagesdir: ../images]
 :toc: left
@@ -77,7 +78,58 @@ image:gh-pull-request1.png[]
 
 *Definiton*: Ein Cronjob ist eine geplante Aufgabe, die regelmäßig zu bestimmten Zeitpunkten oder in festgelegten Intervallen automatisch ausgeführt wird.
 
-.docker-cronjob.sh erstellen
+=== docker-compose.yml
+
+Im Ordner /opt/docker/leo-iot ein docker-compose.yml File erstellen.
+
+-----
+version: '3.7'
+
+services:
+  leo-iot-web:
+    depends_on: [ leo-iot-db, leo-iot-server ]
+    image: ghcr.io/leo-iot/leo-iot-web/webapp
+    container_name: leo-iot-web
+    ports:
+      - 80:80
+    networks:
+      - iot_net
+
+  leo-iot-server:
+    depends_on: [leo-iot-db]
+    image: ghcr.io/leo-iot/leo-iot-server/app
+    container_name: leo-iot-server
+    ports:
+      - 8080:8080  # the HTTP endpoint
+    extra_hosts:
+      - mqtt.htl-leonding.ac.at:10.191.112.90
+    networks:
+      - iot_net
+    restart: always
+
+  leo-iot-db:
+    image: ghcr.io/leo-iot/leo-iot-database/app
+    container_name: leo-iot-database
+    environment:
+      POSTGRES_PASSWORD: app
+      POSTGRES_USER: app
+      POSTGRES_DB: db
+    volumes:
+      - ./data/:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - iot_net
+
+networks:
+  iot_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.139.0.0/16
+-----
+
+=== docker-cronjob.sh im Home-Verzeichnis erstellen
 [source, shell]
 -----
 #!/bin/bash
@@ -132,7 +184,7 @@ crontab -e
 0 2 * * * /home/lsadmin/docker_cronjob.sh <.>
 -----
 
-<.> Das .sh-File wird nun jeden Tag um 2 Uhr in der Früh ausgeführt
+<.> Das sh-File wird nun jeden Tag um 2 Uhr in der Früh ausgeführt
 
 === Manuel updaten
 

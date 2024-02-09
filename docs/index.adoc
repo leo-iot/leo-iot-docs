@@ -19,7 +19,7 @@ Protocol where every meeting should be documented.
 
 == Documentation
 
-=== Generell
+=== General
 
 Documentation of general things which are not related to one specific module.
 
@@ -28,6 +28,10 @@ Documentation of general things which are not related to one specific module.
 * link:general/github-secrets[GitHub Secrets]
 * link:general/git-secret[git secret]
 * link:general/documentation-structure[documentation structure]
+
+* link:leo-iot-web/setting-up-box-and-adding-rooms[Configuring box and Handeling 3D-Model]
+
+* link:leo-iot-web/deployment[Deployment]
 
 === Modules
 
@@ -56,8 +60,4 @@ Official Project documents.
 * link:project-documents/System-Specification[System Specification]
 * link:project-documents/Proposal[Proposal]
 
-== Documentation
 
-* link:leo-iot-web/setting-up-box-and-adding-rooms[Configuring box and Handeling 3D-Model]
-
-* link:leo-iot-web/deployment[Deployment]

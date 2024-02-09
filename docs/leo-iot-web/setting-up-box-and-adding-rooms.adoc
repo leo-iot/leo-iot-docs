@@ -53,7 +53,6 @@ link:https://drive.google.com/file/d/1lFtku4dFRcFErO_S5FD6Z4YTc96Rxv16/view[Weit
 link:https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene[Three.js]
 
 
-=== Wie sind Räume Definiert
 === Raum zuweisung in Angular-Client
 ==== Klasse: Loader
 
