@@ -1,0 +1,34 @@
+.reveal {
+    color: white !important;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black !important;
+}
+
+.reveal h2 {
+    color: white !important;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black !important;
+}
+
+img {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+
+.title-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-slide h1 {
+    display: none !important;
+}
+
+.title-slide {
+    background-image: url("../images/htl_leonding.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lightbg { background: #fff8f1d0; }
